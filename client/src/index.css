@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family:"Inter", sans-serif;
 }
 
 a {
@@ -18,21 +18,7 @@ li {
   --poppins: "Montserrat", sans-serif;
   --lato: "Montserrat", sans-serif;
 
-  --light: #f3f3f3;
-  --blue: #7186ff;
-  --light-blue: #98bdff;
-  --grey: #fff;
-  --dark-grey: #aaaaaa;
-  --dark: #342e37;
-  --secdark: #5b555e;
-  --red: #f3797e;
-  --yellow: #55ff26;
-  --light-yellow: #deffc6;
-  --orange: #f3797e;
-  --light-orange: #ffe0d3;
-  --projectCardBgLight: white;
-  --projectCardHeadLight: #342e37;
-  --projectCardRegLight: #4b484c;
+  --default: #0F172A
 }
 
 html {

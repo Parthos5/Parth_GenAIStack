@@ -1,0 +1,43 @@
+.navbarDiv{
+    color: var(--default);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    align-items: center;
+    border: 1px solid #E4E8EE;
+    padding: 20px 50px 20px 50px;
+}
+
+/* logo css */
+.logoDiv{
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.companyLogoImg{
+    width: 25px;
+    height: 25px;
+}
+
+.logoDiv h3{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--default);
+}
+
+/* profile css */
+.profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background: #B0ACE9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
