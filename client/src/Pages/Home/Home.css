@@ -1,0 +1,34 @@
+.homeDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Home section 2 begins */
+.hsect2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    column-gap: 72vw;
+    /* background: #E4E8EE; */
+    height: 30px;
+    padding: 30px;
+    margin-top: 75px;
+    border: 1px solid #E4E8EE;
+}
+
+.hsecthead{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+/* Home Section 3 begins */
+.hsect3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 55px;
+    row-gap: 30px;
+    padding-top: 30px;
+}

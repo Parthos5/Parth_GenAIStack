@@ -1,0 +1,14 @@
+.addStackBtn{
+    background: #44924C;
+    height: 40px;
+    width: 124px;
+    border-radius: 8px;
+    padding:9px, 15px, 9px, 15px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+}

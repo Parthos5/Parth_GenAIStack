@@ -17,7 +17,7 @@ li {
 :root {
   --poppins: "Montserrat", sans-serif;
   --lato: "Montserrat", sans-serif;
-
+  --taskBtn:#44924C;
   --default: #0F172A
 }
 

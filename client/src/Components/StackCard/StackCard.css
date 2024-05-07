@@ -1,0 +1,40 @@
+.stackCardDiv{
+    width: 20.247vw;
+    height: 168px;
+    border-radius: 10px;
+    box-shadow: 0px -1px 100px 0px #00000012;
+    border: 1px solid #E4E8EE;
+    /* border: 1px solid black; */
+    padding: 25px;
+    position: relative;
+}
+
+.stackName{
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.stackDesc{
+    font-size: 0.875em;
+    color: #666666BF;
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+.cardLink{
+    width: 112px;
+    height: 38px;
+    border-radius: 5px;
+    border: 1px solid #D5D5D5;
+    font-size: 0.875;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6px;
+    color: var(--default);
+    padding: 10px 5px;
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+}
