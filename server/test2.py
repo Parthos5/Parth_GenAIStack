@@ -1,3 +1,5 @@
+import os
+os.environ['OPENAGI_CONFIG_PATH'] = "C:/Users/thosp/OneDrive/Documents/GitHub/Parth_GenAIStack/server/config/config.yaml"
 import logging
 from langchain_community.llms import Ollama
 from openagi.agent import Agent
@@ -52,23 +54,13 @@ def onResultHGI(agentName, result, consumerAgent):
 
 if __name__ == "__main__":
     agent_list = [
-        Agent(
-            agentName="RESEARCHER",  # name
-            role="RESEARCHER",  # role
-            goal="search for latest trends in ai models,openai,microsoft,llm,machine learning",
-            backstory="Has the capability to execute internet search tool",
-            capability="search_executor",
-            task="search internet for the latest ai news",
-            tools_list=[DuckDuckGoSearchTool],
-            output_consumer_agent = ["WRITER"]
-            ),
-        Agent(
+           Agent(
             agentName="WRITER",
             role="SUMMARISING EXPERT",
             goal="summarize input into presentable points",
             backstory="Expert in summarising the given text",
             capability="llm_task_executor",
-            task="summarize points to present to developers about the latest ai updates",
+            task="summarize points to present to health care professionals and general public separately on covid-19 latest trends",
             output_consumer_agent=["EMAILER"],
         ),
         Agent(
@@ -77,7 +69,7 @@ if __name__ == "__main__":
             goal="composes the email based on the content",
             backstory="Good in composing precise emails",
             capability="llm_task_executor",
-            task="composes email based on summary to developers and general public separately into a file with subject-summary and details",
+            task="composes email based on summary to doctors and general public separately into a file with subject-summary and details",
             output_consumer_agent=["HGI"],
         ),
     ]
