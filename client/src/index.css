@@ -1,5 +1,55 @@
-:root{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
   margin: 0;
   padding: 0;
-  
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --poppins: "Montserrat", sans-serif;
+  --lato: "Montserrat", sans-serif;
+
+  --light: #f3f3f3;
+  --blue: #7186ff;
+  --light-blue: #98bdff;
+  --grey: #fff;
+  --dark-grey: #aaaaaa;
+  --dark: #342e37;
+  --secdark: #5b555e;
+  --red: #f3797e;
+  --yellow: #55ff26;
+  --light-yellow: #deffc6;
+  --orange: #f3797e;
+  --light-orange: #ffe0d3;
+  --projectCardBgLight: white;
+  --projectCardHeadLight: #342e37;
+  --projectCardRegLight: #4b484c;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body.dark {
+  --light: #221d2c;
+  --grey: #141219;
+  --dark: #fbfbfb;
+  --secdark: #cac3cd;
+  --projectCardBgLight: #0c0c1e;
+  --projectCardHeadLight: #fbfbfb;
+  --projectCardRegLight: rgba(170, 222, 243, 0.721);
+}
+
+body {
+  background: var(--grey);
+  overflow-x: hidden;
 }
