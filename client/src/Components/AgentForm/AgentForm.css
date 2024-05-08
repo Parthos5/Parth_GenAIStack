@@ -1,0 +1,47 @@
+.agent-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 19.531vw;
+    min-width: 300px;
+    height: fit-content;
+  }
+  
+  .agent-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .agent-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .agent-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 10.95px;
+    margin-bottom: 10px;
+  }
+  
+  .agent-form-group input[type="text"],
+  .agent-form-group textarea,
+  .agent-form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .agent-form-group select {
+    height: auto;
+  }
+  
+  /* Style for read-only form elements */
+  .agent-form-group input,
+  .agent-form-group select {
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  

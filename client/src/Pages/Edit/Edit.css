@@ -149,6 +149,7 @@
     border-radius: 4px;
     background: #fff;
     padding: 10px;
+    height: 30vh;
   }
 
   .greenBackground {
@@ -159,4 +160,8 @@
 .newAgentInput{
     width: 130px;
     padding: 5px;
+}
+
+.react-grid-layout{
+    height: fit-content !important;
 }

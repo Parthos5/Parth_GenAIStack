@@ -9,17 +9,31 @@ import llmIcon from "../../assets/llmIcon.png";
 import toolsIcon from "../../assets/toolsIcon.png";
 import hamburgerIcon from "../../assets/hamburgerIcon.png";
 import upArrowIcon from "../../assets/upArrowIcon.png";
+import dndIcon from '../../assets/dndIcon.png'
 import Navbar from "../../Components/Navbar/Navbar";
+import AgentForm from "../../Components/AgentForm/AgentForm";
 
 export default function Edit() {
   const [agents, setAgents] = useState([
     {
-      name: "Emailer",
+      agentName: "writer",
+      role: "summarising expert",
+      goal: "summarize input into presentable points",
+      backstory: "Expert in summarising the given text",
+      capabilities: "llm_task_executor",
+      task: "summarize points to present to health care professionals",
       add: false,
+      tools_list:["wikisearch"]
     },
     {
-      name: "Writer",
+      agentName: "emailer",
+      role: "communication facilitator",
+      goal: "manage and organize email correspondence",
+      backstory: "Experienced in handling email campaigns and communications",
+      capabilities:"llm_task_executor",
+      task: "organize emails into folders and send out scheduled emails",
       add: false,
+      tools_list:[]
     },
   ]);
   const [tools, setTools] = useState([
@@ -40,19 +54,10 @@ export default function Edit() {
     {
       name: "phi3",
     },
-    {
-      name: "OpenAI 3.5",
-    },
-    {
-      name: "OpenAI 4",
-    },
-    {
-      name: "Claude 3",
-    },
   ]);
   function handleAddAgent() {
     if (newAgentName.trim() !== "") {
-      setAgents([...agents, { name: newAgentName }]);
+      setAgents([...agents, { agenName: newAgentName }]);
       setNewAgentName(""); // Reset input field
     }
   }
@@ -61,6 +66,7 @@ export default function Edit() {
   const [displayTools, setDisplayTools] = useState(false);
   const [displayLLMs, setDisplayLLMs] = useState(false);
   const [newAgentName, setNewAgentName] = useState("");
+  const [selectedModel,setSelectedModel] = useState(false)
   const ResponsiveGridLayout = WidthProvider(Responsive);
 
   const initialLayout = [
@@ -81,6 +87,17 @@ export default function Edit() {
       setDisplayLLMs(!displayLLMs);
     }
   }
+  const onChangeAgent = (index, field, value) => {
+    const updatedAgents = [...agents];
+    updatedAgents[index][field] = value;
+    setAgents(updatedAgents);
+
+    console.log(agents)
+    // const updatedPgAgents = [...pgAgents];
+    // updatedPgAgents[index][field] = value;
+    // setPgAgents(updatedPgAgents);
+  };
+
 
   const Playground = useMemo(
     () => (
@@ -91,7 +108,7 @@ export default function Edit() {
           layouts={{ lg: initialLayout }}
           breakpoints={{ lg: 1200 }}
           cols={{ lg: 12 }}
-          rowHeight={30}
+          rowHeight={1}
           width={1200}
           verticalCompact={false}
           isResizable={false}
@@ -99,16 +116,28 @@ export default function Edit() {
         >
           {pgAgents.map((agent, index) => (
             <div
-              key={agent.name}
+              key={agent.agentName}
               className="agent-container"
               data-grid={{ x: index * 2, y: 0, w: 2, h: 3 }}
             >
-              <h3>{agent.name}</h3>
+              {/* <h3>{agent.name}</h3> */}
+              <AgentForm
+                name={agent.agentName}
+                role={agent.role}
+                goal={agent.goal}
+                backstory={agent.backstory}
+                capabilities={agent.capabilities}
+                task={agent.task}
+                tools_list = {agent.tools_list}
+                onChange={(field, value) => onChangeAgent(index, field, value)}
+              />
               {/* ... other content ... */}
             </div>
           ))}
           {/* Render additional containers as needed */}
         </ResponsiveGridLayout>
+
+        <div className="dndPlaceholder"><img src={dndIcon} alt="" /> <p>Drag and Drop to get started</p> </div>
       </div>
     ),
     [pgAgents]
@@ -120,20 +149,20 @@ export default function Edit() {
       const updatedAgents = [...agents];
       updatedAgents[index] = { ...updatedAgents[index], add: true };
       setAgents(updatedAgents);
-
       // Append the name to pgAgents
-      setPgAgents([...pgAgents, { name }]);
+      setPgAgents([...pgAgents, { agentName:name, add: true }]);
     } else {
       // Set the add attribute to false for the agent
       const updatedAgents = [...agents];
       updatedAgents[index] = { ...updatedAgents[index], add: false };
       setAgents(updatedAgents);
-
+  
       // Remove the agent from pgAgents
-      const filteredPgAgents = pgAgents.filter((agent) => agent.name !== name);
+      const filteredPgAgents = pgAgents.filter((agent) => agent.agentName !== name);
       setPgAgents(filteredPgAgents);
     }
   }
+
   return (
     <div>
       <Navbar />
@@ -165,9 +194,9 @@ export default function Edit() {
                       className={
                         "Option" + (agent.add ? " greenBackground" : "")
                       }
-                      onClick={() => handleAgent(agent.name, index)}
+                      onClick={() => handleAgent(agent.agentName, index)}
                     >
-                      <p>{agent.name}</p>
+                      <p>{agent.agentName}</p>
                       <img
                         className="hamburgerIcon"
                         src={hamburgerIcon}
@@ -235,8 +264,10 @@ export default function Edit() {
               </div>
               {displayLLMs &&
                 llms.map((llm, index) => (
-                  <div key={index} className="componentOptions">
-                    <div className="Option">
+                  <div key={index} className="componentOptions"  onClick={()=>setSelectedModel(!selectedModel)}>
+                    <div className={
+                        "Option" + (selectedModel? " greenBackground" : "")
+                      } >
                       <p>{llm.name}</p>
                       <img
                         className="hamburgerIcon"
