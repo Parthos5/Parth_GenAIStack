@@ -3,13 +3,13 @@ import "./App.css";
 import {
   createBrowserRouter,
   RouterProvider,
-  Outlet,
   Route,
   Link,
 } from "react-router-dom";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import Home from "./Pages/Home/Home";
+import Edit from "./Pages/Edit/Edit";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +23,11 @@ const router = createBrowserRouter([
   {
     path:"/home",
     element:<Home />
-  }
+  },
+  {
+    path:"/edit",
+    element:<Edit />
+  },
 ]);
 
 function App() {

@@ -9,22 +9,22 @@ import CreateNewPopup from "../../Components/CreateNewPopup/CreateNewPopup";
 export default function Home() {
   const [stacks, setStacks] = useState([
     {
-        name:"Chat with PDF",
-        description:"Chat with your pdf docs",
-        id:"12345"
+      name: "Chat with PDF",
+      description: "Chat with your pdf docs",
+      id: "12345",
     },
     {
-        name:"Chat with PDF",
-        description:"Chat with your pdf docs",
-        id:"12345"
-    }
+      name: "Chat with PDF",
+      description: "Chat with your pdf docs",
+      id: "123456",
+    },
   ]);
 
-  const [newStack,setNewStack] = useState(false)
+  const [newStack, setNewStack] = useState(false);
 
-  function handlePopup(){
-    console.log("hello")
-    setNewStack(!newStack)
+  function handlePopup() {
+    console.log("hello");
+    setNewStack(!newStack);
   }
 
   return (
@@ -34,9 +34,11 @@ export default function Home() {
 
       {/* Home Section 2 */}
       <div className="hsect2 MyStacksSection">
-        <p className="hsecthead" onClick={handlePopup}>My Stacks</p>
+        <p className="hsecthead" onClick={handlePopup}>
+          My Stacks
+        </p>
         {/* <button className="addStackBtn">Add stack</button> */}
-        <AddStackBtn onClick={handlePopup}/>
+        <AddStackBtn onClick={handlePopup} />
       </div>
 
       {/* Home Section 3 */}
@@ -44,18 +46,19 @@ export default function Home() {
         {stacks &&
           stacks.map((stack) => (
             <StackCard
+              key={stack.id}
               name={stack.name}
               description={stack.description}
-              id={stack.id}
+              cardId={stack.id}
             />
           ))}
       </div>
 
       {/* Empty Stack list case */}
-      {stacks.length == 0 && <CreateNew onClick={handlePopup}/>}
+      {stacks.length == 0 && <CreateNew onClick={handlePopup} />}
 
       {/* Create new stack form popup */}
-      {newStack && <CreateNewPopup onClick={handlePopup}/>}
+      {newStack && <CreateNewPopup onClick={handlePopup} />}
     </div>
   );
 }
