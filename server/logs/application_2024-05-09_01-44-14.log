@@ -1,0 +1,187 @@
+2024-05-09 01:44:14 INFO::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\__init__.py:19:<module>:Logs stored at C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\logs
+2024-05-09 01:44:16 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\h5py\__init__.py:47:<module>:Creating converter from 7 to 5
+2024-05-09 01:44:16 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\h5py\__init__.py:47:<module>:Creating converter from 5 to 7
+2024-05-09 01:44:16 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\h5py\__init__.py:47:<module>:Creating converter from 7 to 5
+2024-05-09 01:44:16 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\h5py\__init__.py:47:<module>:Creating converter from 5 to 7
+2024-05-09 01:44:27 DEBUG::16328::C:\Python311\Lib\asyncio\proactor_events.py:629:__init__:Using proactor: IocpProactor
+2024-05-09 01:44:29 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\tools\utils.py:64:setGHGI:Number of HGI set to: 1
+2024-05-09 01:44:29 INFO::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\init_agent.py:91:kickOffAgents:Total number of HGI agents: 1
+2024-05-09 01:44:29 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\init_agent.py:41:agentInitSystem:kick-off of the program
+2024-05-09 01:44:29 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\message_broker.py:19:__init__:created message broker infra with agents no 5
+2024-05-09 01:44:29 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:28:setGMapper:mapper object = {'name_to_index': {'WRITER': 0, 'EMAILER': 1}, 'index_to_name': {0: 'WRITER', 1: 'EMAILER'}, 'PQ_LIST': [<openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147D9B3E10>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147E940DD0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147E9411D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147E9413D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147E941590>], 'COND_LIST': [<Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E941840>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E9418C0>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E941940>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E9419C0>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E941A40>, 0)>], 'lock': <unlocked _thread.lock object at 0x000002147E941AC0>, 'timerPool': <openagi.queue.timer_pool.TimerList object at 0x000002147E941B10>}
+2024-05-09 01:44:29 INFO::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\init_agent.py:51:agentInitSystem:timer demon started
+2024-05-09 01:44:29 DEBUG::2704::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\timer_pool.py:115:run:timer thread started..................
+2024-05-09 01:44:29 DEBUG::2704::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-09 01:44:29 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:31:getGMapper:mapper object from get = {'name_to_index': {'WRITER': 0, 'EMAILER': 1}, 'index_to_name': {0: 'WRITER', 1: 'EMAILER'}, 'PQ_LIST': [<openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147D9B3E10>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147E940DD0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147E9411D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147E9413D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147E941590>], 'COND_LIST': [<Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E941840>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E9418C0>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E941940>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E9419C0>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E941A40>, 0)>], 'lock': <unlocked _thread.lock object at 0x000002147E941AC0>, 'timerPool': <openagi.queue.timer_pool.TimerList object at 0x000002147E941B10>}
+2024-05-09 01:44:29 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of WRITER is 0
+2024-05-09 01:44:29 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\message_broker.py:43:get_COND_by_name:index of WRITER is 0
+2024-05-09 01:44:29 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:312:run:I am agent WRITER
+2024-05-09 01:44:29 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:350:start_agent:Agent: WRITER LLM: <__main__.OllamaModel object at 0x000002147E110250>
+2024-05-09 01:44:29 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 01:44:29 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of EMAILER is 1
+2024-05-09 01:44:29 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 01:44:29 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\message_broker.py:43:get_COND_by_name:index of EMAILER is 1
+2024-05-09 01:44:29 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:312:run:I am agent EMAILER
+2024-05-09 01:44:29 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:350:start_agent:Agent: EMAILER LLM: <__main__.OllamaModel object at 0x000002147E110250>
+2024-05-09 01:44:29 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:31:getGMapper:mapper object from get = {'name_to_index': {'WRITER': 0, 'EMAILER': 1}, 'index_to_name': {0: 'WRITER', 1: 'EMAILER'}, 'PQ_LIST': [<openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147D9B3E10>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147E940DD0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147E9411D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147E9413D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002147E941590>], 'COND_LIST': [<Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E941840>, 1)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E9418C0>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E941940>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E9419C0>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x000002147E941A40>, 0)>], 'lock': <unlocked _thread.lock object at 0x000002147E941AC0>, 'timerPool': <openagi.queue.timer_pool.TimerList object at 0x000002147E941B10>}
+2024-05-09 01:44:29 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 01:44:29 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\pq.py:28:__init__:message contents:0:0::MessageType.PROF_AGENT_TRIGGER ::profAgent ->WRITER :HGI sending trigger message to start the execution
+2024-05-09 01:44:29 DEBUG::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of WRITER is 0
+2024-05-09 01:44:29 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 01:44:34 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:319:run:agent WRITER retrieved message: {'priority': 0, 'perception_type': 0, 'message_type': <MessageType.PROF_AGENT_TRIGGER: 2>, 'srcAgent': 'profAgent', 'dstAgent': 'WRITER', 'body': 'HGI sending trigger message to start the execution'}
+2024-05-09 01:44:34 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:321:run:appended received message to list for aggregation
+2024-05-09 01:44:34 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\timer_pool.py:41:add_timer:current time: 1715199274.6918416 : internal 20000
+2024-05-09 01:44:34 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\timer_pool.py:46:add_timer:first timer inserted....
+2024-05-09 01:44:34 DEBUG::2704::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 20000.0
+2024-05-09 01:44:34 INFO::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\utils\llmTasks.py:280:handleLLMTask:Running handleLLMTask:: <__main__.OllamaModel object at 0x000002147E110250>
+2024-05-09 01:44:35 DEBUG::10412::C:\Python311\Lib\site-packages\urllib3\connectionpool.py:244:_new_conn:Starting new HTTP connection (1): localhost:11434
+2024-05-09 01:44:37 DEBUG::10412::C:\Python311\Lib\site-packages\urllib3\connectionpool.py:549:_make_request:http://localhost:11434 "POST /api/generate/ HTTP/1.1" 307 0
+2024-05-09 01:44:42 DEBUG::10412::C:\Python311\Lib\site-packages\urllib3\connectionpool.py:549:_make_request:http://localhost:11434 "POST /api/generate HTTP/1.1" 200 None
+2024-05-09 01:46:09 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 01:46:09 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 01:46:22 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:276:execute:response of agent WRITER is To Health Care Professionals:
+
+1. Current Covid-19 Trends: Review up-to-date statistics on infection rates, hospitalizations, deaths, and recoveries globally, nationally, and locally.
+2. Variant Analysis: Understand the prevalence of new variants such as Omicron BA.2, including their transmission rate, severity, and impact on vaccine efficacy.
+3. Vaccination Efficacy: Keep abreast of studies examining the effectiveness of current vaccines against emerging variants to determine if booster shots are necessary or adjustments should be made in the existing vaccination campaigns.
+4. Treatment Options and Guidelines: Stay updated with approved treatments for Covid-1 Written Summary: Health Care Professionals - Current Covid-19 Trends, Variant Analysis, Vaccination Efficacy, and Updated Treatment Guidelines. 
+
+To General Public:
+
+1. Latest Covid-19 Updates: Stay informed on the current state of the pandemic including new case numbers, hospitalizations, and deaths in your area to remain vigilant about personal health.
+2. Variant Information: Learn about emerging variants like Omicron BA.2, how they spread, their impact on vaccine effectiveness, and any changes to recommended prevention measures.
+3. Importance of Vaccination: Understand the role of Covid-19 vaccinations in protecting yourself and your community against severe illness and hospitalization by staying up-to-date with booster shots.
+4. Preventative Measures: Review current guidelines for maintaining healthy practices, including mask wearing, social distancing, hand hygiene, and ventilation to minimize risk of infection.
+2024-05-09 01:46:22 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\timer_pool.py:88:remove_timerWithNames:remove timer is called for WRITER LLM_TIMER
+2024-05-09 01:46:22 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\timer_pool.py:94:remove_timerWithNames:timer found for agent WRITER timer name LLM_TIMER  for removal
+2024-05-09 01:46:22 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:307:execute:WRITER..to.. EMAILER content:: To Health Care Professionals:
+
+1. Current Covid-19 Trends: Review up-to-date statistics on infection rates, hospitalizations, deaths, and recoveries globally, nationally, and locally.
+2. Variant Analysis: Understand the prevalence of new variants such as Omicron BA.2, including their transmission rate, severity, and impact on vaccine efficacy.
+3. Vaccination Efficacy: Keep abreast of studies examining the effectiveness of current vaccines against emerging variants to determine if booster shots are necessary or adjustments should be made in the existing vaccination campaigns.
+4. Treatment Options and Guidelines: Stay updated with approved treatments for Covid-1 Written Summary: Health Care Professionals - Current Covid-19 Trends, Variant Analysis, Vaccination Efficacy, and Updated Treatment Guidelines. 
+
+To General Public:
+
+1. Latest Covid-19 Updates: Stay informed on the current state of the pandemic including new case numbers, hospitalizations, and deaths in your area to remain vigilant about personal health.
+2. Variant Information: Learn about emerging variants like Omicron BA.2, how they spread, their impact on vaccine effectiveness, and any changes to recommended prevention measures.
+3. Importance of Vaccination: Understand the role of Covid-19 vaccinations in protecting yourself and your community against severe illness and hospitalization by staying up-to-date with booster shots.
+4. Preventative Measures: Review current guidelines for maintaining healthy practices, including mask wearing, social distancing, hand hygiene, and ventilation to minimize risk of infection.
+2024-05-09 01:46:22 DEBUG::2704::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-09 01:46:22 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\pq.py:28:__init__:message contents:0:0::MessageType.AGENT_MSG ::WRITER ->EMAILER :To Health Care Professionals:
+
+1. Current Covid-19 Trends: Review up-to-date statistics on infection rates, hospitalizations, deaths, and recoveries globally, nationally, and locally.
+2. Variant Analysis: Understand the prevalence of new variants such as Omicron BA.2, including their transmission rate, severity, and impact on vaccine efficacy.
+3. Vaccination Efficacy: Keep abreast of studies examining the effectiveness of current vaccines against emerging variants to determine if booster shots are necessary or adjustments should be made in the existing vaccination campaigns.
+4. Treatment Options and Guidelines: Stay updated with approved treatments for Covid-1 Written Summary: Health Care Professionals - Current Covid-19 Trends, Variant Analysis, Vaccination Efficacy, and Updated Treatment Guidelines. 
+
+To General Public:
+
+1. Latest Covid-19 Updates: Stay informed on the current state of the pandemic including new case numbers, hospitalizations, and deaths in your area to remain vigilant about personal health.
+2. Variant Information: Learn about emerging variants like Omicron BA.2, how they spread, their impact on vaccine effectiveness, and any changes to recommended prevention measures.
+3. Importance of Vaccination: Understand the role of Covid-19 vaccinations in protecting yourself and your community against severe illness and hospitalization by staying up-to-date with booster shots.
+4. Preventative Measures: Review current guidelines for maintaining healthy practices, including mask wearing, social distancing, hand hygiene, and ventilation to minimize risk of infection.
+2024-05-09 01:46:22 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of EMAILER is 1
+2024-05-09 01:46:22 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 01:46:22 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 01:46:22 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:319:run:agent EMAILER retrieved message: {'priority': 0, 'perception_type': 0, 'message_type': <MessageType.AGENT_MSG: 5>, 'srcAgent': 'WRITER', 'dstAgent': 'EMAILER', 'body': 'To Health Care Professionals:\n\n1. Current Covid-19 Trends: Review up-to-date statistics on infection rates, hospitalizations, deaths, and recoveries globally, nationally, and locally.\n2. Variant Analysis: Understand the prevalence of new variants such as Omicron BA.2, including their transmission rate, severity, and impact on vaccine efficacy.\n3. Vaccination Efficacy: Keep abreast of studies examining the effectiveness of current vaccines against emerging variants to determine if booster shots are necessary or adjustments should be made in the existing vaccination campaigns.\n4. Treatment Options and Guidelines: Stay updated with approved treatments for Covid-1 Written Summary: Health Care Professionals - Current Covid-19 Trends, Variant Analysis, Vaccination Efficacy, and Updated Treatment Guidelines. \n\nTo General Public:\n\n1. Latest Covid-19 Updates: Stay informed on the current state of the pandemic including new case numbers, hospitalizations, and deaths in your area to remain vigilant about personal health.\n2. Variant Information: Learn about emerging variants like Omicron BA.2, how they spread, their impact on vaccine effectiveness, and any changes to recommended prevention measures.\n3. Importance of Vaccination: Understand the role of Covid-19 vaccinations in protecting yourself and your community against severe illness and hospitalization by staying up-to-date with booster shots.\n4. Preventative Measures: Review current guidelines for maintaining healthy practices, including mask wearing, social distancing, hand hygiene, and ventilation to minimize risk of infection.'}
+2024-05-09 01:46:22 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:321:run:appended received message to list for aggregation
+2024-05-09 01:46:22 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\timer_pool.py:41:add_timer:current time: 1715199382.350657 : internal 20000
+2024-05-09 01:46:22 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\timer_pool.py:46:add_timer:first timer inserted....
+2024-05-09 01:46:22 DEBUG::2704::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 20000.0
+2024-05-09 01:46:22 INFO::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\utils\llmTasks.py:280:handleLLMTask:Running handleLLMTask:: <__main__.OllamaModel object at 0x000002147E110250>
+2024-05-09 01:46:22 DEBUG::8668::C:\Python311\Lib\site-packages\urllib3\connectionpool.py:244:_new_conn:Starting new HTTP connection (1): localhost:11434
+2024-05-09 01:46:24 DEBUG::8668::C:\Python311\Lib\site-packages\urllib3\connectionpool.py:549:_make_request:http://localhost:11434 "POST /api/generate/ HTTP/1.1" 307 0
+2024-05-09 01:46:28 DEBUG::8668::C:\Python311\Lib\site-packages\urllib3\connectionpool.py:549:_make_request:http://localhost:11434 "POST /api/generate HTTP/1.1" 200 None
+2024-05-09 01:48:02 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 01:48:02 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 01:49:42 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 01:49:42 DEBUG::10412::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 01:50:17 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:276:execute:response of agent EMAILER is **Subject: Important Covid-19 Updates & Vaccination Information for Healthcare Professionals & Public**
+
+
+Dear [Recipient],
+
+
+--- **To Health Care Professionals** ---
+
+I hope this message finds you well amidst these challenging times. As part of our ongoing commitment to your continuous education, I'm providing a concise update covering critical aspects concerning the Covid-19 pandemic:
+
+
+* **Current Covid-19 Trends**: We've observed significant shifts in infection rates and hospitalizations globally. Nationwide data indicates [insert specific numbers], while localized figures showcase [insert regional statistics]. The total number of deaths stands at [insert accurate figure]. Recoveries continue to rise, with recent totals reaching [insert statistic].
+
+* **Variant Analysis**: A critical update involves the Omicron BA.2 variant. Current studies highlight its transmission rate as [percentage], and although it presents a concerning profile, severity appears comparable to earlier strains. Vaccine efficacy against this variant remains largely preserved; however, ongoing research is essential for comprehensive insights.
+
+* **Vaccination Efficacy**: Recent studies underscore the effectiveness of current vaccines, with [mention study name] confirming robust protection against severe disease and hospitalization. We recommend keeping an eye on booster shot guidelines to ensure optimal immunity levels within our patient community.
+
+* **Treatment Options & Guidelines**: Updated treatment protocols have been established in light of emerging variants, with [list treatments]. Continued adherence to these is crucial for managing cases effectively and improving patient outcomes.
+
+
+--- **To the General Public** ---
+
+Your health and safety remain our top priority. Below are key updates relevant to you:
+
+* **Latest Covid-19 Updates**: The most recent data shows [insert local numbers] new cases, with [number of hospitalizations] individuals currently hospitalized due to the virus. Tragically, we've recorded [number of deaths]. Staying informed helps you take proactive steps for your wellbeayer.
+
+* **Variant Information**: The Omicron BA.2 variant is gaining attention globally with a notable transmission rate of [percentage]. While vaccines continue to offer robust protection, it's essential to stay updated on prevention measures and potential booster shots for enhanced immunity.
+
+* **Importance of Vaccination**: The Covid-19 vaccine is your best defense against severe illness. By completing your primary series and receiving recommended boosters, you contribute significantly to community health and help slow the spread of infection.
+
+* **Preventative Measures**: Adhering to current guidelines such as [mask wearing, social distancing] can greatly reduce infection risk. Remember, regular handwashing and ensuring good ventilation are also key practices for maintaining a healthy environment.
+
+
+We appreciate your dedication during these trying times. Please feel free to reach out if you have any questions or need further clarification on the provided information.
+
+
+Stay safe and well,
+
+[Your Name]
+[Your Title/Organization]
+2024-05-09 01:50:17 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\timer_pool.py:88:remove_timerWithNames:remove timer is called for EMAILER LLM_TIMER
+2024-05-09 01:50:17 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\timer_pool.py:94:remove_timerWithNames:timer found for agent EMAILER timer name LLM_TIMER  for removal
+2024-05-09 01:50:17 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:140:sendMessagetoHGI:final message to HGI= **Subject: Important Covid-19 Updates & Vaccination Information for Healthcare Professionals & Public**
+
+
+Dear [Recipient],
+
+
+--- **To Health Care Professionals** ---
+
+I hope this message finds you well amidst these challenging times. As part of our ongoing commitment to your continuous education, I'm providing a concise update covering critical aspects concerning the Covid-19 pandemic:
+
+
+* **Current Covid-19 Trends**: We've observed significant shifts in infection rates and hospitalizations globally. Nationwide data indicates [insert specific numbers], while localized figures showcase [insert regional statistics]. The total number of deaths stands at [insert accurate figure]. Recoveries continue to rise, with recent totals reaching [insert statistic].
+
+* **Variant Analysis**: A critical update involves the Omicron BA.2 variant. Current studies highlight its transmission rate as [percentage], and although it presents a concerning profile, severity appears comparable to earlier strains. Vaccine efficacy against this variant remains largely preserved; however, ongoing research is essential for comprehensive insights.
+
+* **Vaccination Efficacy**: Recent studies underscore the effectiveness of current vaccines, with [mention study name] confirming robust protection against severe disease and hospitalization. We recommend keeping an eye on booster shot guidelines to ensure optimal immunity levels within our patient community.
+
+* **Treatment Options & Guidelines**: Updated treatment protocols have been established in light of emerging variants, with [list treatments]. Continued adherence to these is crucial for managing cases effectively and improving patient outcomes.
+
+
+--- **To the General Public** ---
+
+Your health and safety remain our top priority. Below are key updates relevant to you:
+
+* **Latest Covid-19 Updates**: The most recent data shows [insert local numbers] new cases, with [number of hospitalizations] individuals currently hospitalized due to the virus. Tragically, we've recorded [number of deaths]. Staying informed helps you take proactive steps for your wellbeayer.
+
+* **Variant Information**: The Omicron BA.2 variant is gaining attention globally with a notable transmission rate of [percentage]. While vaccines continue to offer robust protection, it's essential to stay updated on prevention measures and potential booster shots for enhanced immunity.
+
+* **Importance of Vaccination**: The Covid-19 vaccine is your best defense against severe illness. By completing your primary series and receiving recommended boosters, you contribute significantly to community health and help slow the spread of infection.
+
+* **Preventative Measures**: Adhering to current guidelines such as [mask wearing, social distancing] can greatly reduce infection risk. Remember, regular handwashing and ensuring good ventilation are also key practices for maintaining a healthy environment.
+
+
+We appreciate your dedication during these trying times. Please feel free to reach out if you have any questions or need further clarification on the provided information.
+
+
+Stay safe and well,
+
+[Your Name]
+[Your Title/Organization]
+2024-05-09 01:50:17 DEBUG::2704::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-09 01:50:17 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\tools\utils.py:70:isLastHGI:Number of HGI reduced to: 0
+2024-05-09 01:50:17 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:303:execute:before wake for exit..........
+2024-05-09 01:50:17 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 01:50:17 DEBUG::8668::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 01:50:17 INFO::16328::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\init_agent.py:64:triggerAgent:final exit
