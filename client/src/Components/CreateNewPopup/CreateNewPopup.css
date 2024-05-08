@@ -1,0 +1,91 @@
+.createNewPopupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.createNewPopupDiv {
+  width: 35.286vw;
+  height: 431px;
+  border-radius: 10px;
+  padding: 19px, 0px, 19px, 0px;
+  /* border: 1px solid black; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.createNewPopupContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  width: 100%;
+}
+
+.createNewPopupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.createNewPopupClose {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.createNewPopupForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.createNewPopupForm input,
+.createNewPopupForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.createNewPopupButtons {
+  text-align: right;
+}
+
+.createNewPopupCancel,
+.createNewPopupCreate {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.createNewPopupCancel {
+  background-color: #f5f5f5;
+}
+
+.createNewPopupCreate {
+  color: white;
+  background-color:#44924C33;
+}
+
+.createButtonWithText{
+    background-color: var(--taskBtn);
+}

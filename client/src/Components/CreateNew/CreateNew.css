@@ -1,0 +1,31 @@
+.createNewStack{
+    width: 39.518vw;
+    height: 221px;
+    border-radius: 20px;
+    border: 1px solid #E4E8EE;
+    /* border: 1px solid black; */
+    padding:45px, 50px, 45px, 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 25px;
+    margin-top: 10vh;
+    align-items: flex-start;
+}
+
+.newStackText{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.newStackHead{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.newStackDesc{
+    font-weight: 500;
+    color: #666666;
+    font-size: 0.875em;
+}
