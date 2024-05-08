@@ -1,6 +1,9 @@
 import React, { useMemo, useState } from "react";
 import "./Edit.css";
 import { Responsive, WidthProvider } from "react-grid-layout";
+import Tippy from "@tippyjs/react";
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/animations/shift-toward.css'; 
 import "react-grid-layout/css/styles.css";
 import editIcon from "../../assets/editIcon.png";
 import agentsIcon from "../../assets/agentsIcon.png";
@@ -9,7 +12,9 @@ import llmIcon from "../../assets/llmIcon.png";
 import toolsIcon from "../../assets/toolsIcon.png";
 import hamburgerIcon from "../../assets/hamburgerIcon.png";
 import upArrowIcon from "../../assets/upArrowIcon.png";
-import dndIcon from '../../assets/dndIcon.png'
+import dndIcon from "../../assets/dndIcon.png";
+import buildIcon from "../../assets/buildIcon.png";
+import runIcon from "../../assets/runIcon.png";
 import Navbar from "../../Components/Navbar/Navbar";
 import AgentForm from "../../Components/AgentForm/AgentForm";
 
@@ -23,17 +28,17 @@ export default function Edit() {
       capabilities: "llm_task_executor",
       task: "summarize points to present to health care professionals",
       add: false,
-      tools_list:["wikisearch"]
+      tools_list: ["wikisearch"],
     },
     {
       agentName: "emailer",
       role: "communication facilitator",
       goal: "manage and organize email correspondence",
       backstory: "Experienced in handling email campaigns and communications",
-      capabilities:"llm_task_executor",
+      capabilities: "llm_task_executor",
       task: "organize emails into folders and send out scheduled emails",
       add: false,
-      tools_list:[]
+      tools_list: [],
     },
   ]);
   const [tools, setTools] = useState([
@@ -55,18 +60,14 @@ export default function Edit() {
       name: "phi3",
     },
   ]);
-  function handleAddAgent() {
-    if (newAgentName.trim() !== "") {
-      setAgents([...agents, { agenName: newAgentName }]);
-      setNewAgentName(""); // Reset input field
-    }
-  }
-
   const [displayAgent, setDisplayAgent] = useState(false);
   const [displayTools, setDisplayTools] = useState(false);
   const [displayLLMs, setDisplayLLMs] = useState(false);
   const [newAgentName, setNewAgentName] = useState("");
-  const [selectedModel,setSelectedModel] = useState(false)
+  const [selectedModel, setSelectedModel] = useState(false);
+  const [readyToRun,setReadyToRun] = useState(false)
+  const [modelName,setModelName] = useState("phi3")
+  const [finalBuild,setFinalBuild] = useState({})
   const ResponsiveGridLayout = WidthProvider(Responsive);
 
   const initialLayout = [
@@ -74,7 +75,13 @@ export default function Edit() {
     // Add more items to the layout as needed
   ];
 
-  // Initialize the agents state with the newAgents array
+  function handleAddAgent() {
+    if (newAgentName.trim() !== "") {
+      setAgents([...agents, { agenName: newAgentName }]);
+      setNewAgentName(""); // Reset input field
+    }
+  }
+
   const [pgAgents, setPgAgents] = useState([]);
 
   function handleDisplay(prop) {
@@ -92,12 +99,18 @@ export default function Edit() {
     updatedAgents[index][field] = value;
     setAgents(updatedAgents);
 
-    console.log(agents)
-    // const updatedPgAgents = [...pgAgents];
-    // updatedPgAgents[index][field] = value;
-    // setPgAgents(updatedPgAgents);
+    console.log(agents);
   };
 
+  const handleBuild = () => {
+    const data = {
+        pgAgents: pgAgents,
+        modelName: modelName
+      };
+      console.log(data);
+      setFinalBuild(data)
+      console.log(finalBuild)
+  }
 
   const Playground = useMemo(
     () => (
@@ -128,7 +141,7 @@ export default function Edit() {
                 backstory={agent.backstory}
                 capabilities={agent.capabilities}
                 task={agent.task}
-                tools_list = {agent.tools_list}
+                tools_list={agent.tools_list}
                 onChange={(field, value) => onChangeAgent(index, field, value)}
               />
               {/* ... other content ... */}
@@ -136,8 +149,23 @@ export default function Edit() {
           ))}
           {/* Render additional containers as needed */}
         </ResponsiveGridLayout>
-
-        <div className="dndPlaceholder"><img src={dndIcon} alt="" /> <p>Drag and Drop to get started</p> </div>
+        {pgAgents.length == 0 && (
+          <div className="dndPlaceholder">
+            <img src={dndIcon} alt="" /> <p>Drag and Drop to get started</p>{" "}
+          </div>
+        )}
+        <div className="buildRunDiv">
+          <Tippy content="Build" placement="left" animation="fade">
+            <div className="actionIconDiv buildIcon" onClick={handleBuild}>
+              <img src={buildIcon} className="actionIcon" alt="Build" />
+            </div>
+          </Tippy>
+          <Tippy content="Run" placement="left" animation="fade">
+            <div className="actionIconDiv runIcon" style={{ opacity: readyToRun ? 1 : 0.5 }}>
+              <img src={runIcon} className="actionIcon" alt="Run" />
+            </div>
+          </Tippy>
+        </div>
       </div>
     ),
     [pgAgents]
@@ -145,20 +173,18 @@ export default function Edit() {
 
   function handleAgent(name, index) {
     if (!agents[index].add) {
-      // Set the add attribute to true for the agent
       const updatedAgents = [...agents];
       updatedAgents[index] = { ...updatedAgents[index], add: true };
       setAgents(updatedAgents);
-      // Append the name to pgAgents
-      setPgAgents([...pgAgents, { agentName:name, add: true }]);
+      setPgAgents([...pgAgents, { agentName: name, add: true }]);
     } else {
-      // Set the add attribute to false for the agent
       const updatedAgents = [...agents];
       updatedAgents[index] = { ...updatedAgents[index], add: false };
       setAgents(updatedAgents);
-  
-      // Remove the agent from pgAgents
-      const filteredPgAgents = pgAgents.filter((agent) => agent.agentName !== name);
+
+      const filteredPgAgents = pgAgents.filter(
+        (agent) => agent.agentName !== name
+      );
       setPgAgents(filteredPgAgents);
     }
   }
@@ -264,10 +290,16 @@ export default function Edit() {
               </div>
               {displayLLMs &&
                 llms.map((llm, index) => (
-                  <div key={index} className="componentOptions"  onClick={()=>setSelectedModel(!selectedModel)}>
-                    <div className={
-                        "Option" + (selectedModel? " greenBackground" : "")
-                      } >
+                  <div
+                    key={index}
+                    className="componentOptions"
+                    onClick={() => setSelectedModel(!selectedModel)}
+                  >
+                    <div
+                      className={
+                        "Option" + (selectedModel ? " greenBackground" : "")
+                      }
+                    >
                       <p>{llm.name}</p>
                       <img
                         className="hamburgerIcon"

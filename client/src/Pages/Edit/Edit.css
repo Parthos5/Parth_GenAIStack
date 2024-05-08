@@ -142,6 +142,7 @@
     background: url('../../assets/buildBg.png');
     background-position: center;
     background-size: contain;
+    position: relative;
 }
 
 .agent-container {
@@ -160,8 +161,63 @@
 .newAgentInput{
     width: 130px;
     padding: 5px;
+    border: none;
 }
 
 .react-grid-layout{
     height: fit-content !important;
+}
+
+.dndPlaceholder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    position: absolute;
+    left: 46%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.dndPlaceholder img{
+    background: #DEFBEA;
+    padding: 20px;
+    border-radius: 42.5px;
+}
+
+.buildRunDiv{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 48px;
+}
+
+.actionIconDiv{
+    padding:20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+
+.actionIcon{
+    /* padding: 20px; */
+    width: 24px;
+    height: 24px;
+}
+
+.buildIcon{
+    background: #16A34A;
+}
+
+.runIcon{
+    background: #2563EB;
 }
