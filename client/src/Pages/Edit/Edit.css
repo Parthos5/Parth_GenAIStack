@@ -16,7 +16,25 @@
   align-items: center;
   padding: 30px 10px;
   row-gap: 20px;
+  border-right: 1px solid #E4E8EE;
+  overflow-y: scroll;
 }
+
+/* Thin scrollbar */
+.sideBar::-webkit-scrollbar {
+    width: 2px; /* Adjust the width as needed */
+  }
+  
+  /* Track */
+  .sideBar::-webkit-scrollbar-track {
+    background: transparent; /* Set the background color */
+  }
+  
+  /* Handle */
+  .sideBar::-webkit-scrollbar-thumb {
+    background-color: #585d68; /* Set the color of the scrollbar handle */
+    border-radius: 10px; /* Rounded corners for the scrollbar handle */
+  }
 
 .stackName {
   display: flex;
@@ -44,7 +62,14 @@
   row-gap: 20px;
 }
 
-.componentDiv {
+.componentDiv{
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.componentTop {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -72,8 +97,66 @@
   height: 4.86px;
 }
 
+.componentOptions {
+    /* Other styles */
+    animation: fadeIn 0.4s ease-in-out forwards;
+    opacity: 0; /* Start with opacity 0 */
+  }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.Option{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: var(--default);
+    width: 190px;
+    justify-content: space-around;
+    padding: 9px 4px 9px 4px;
+    border: 1px solid #e4e8ee;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    transition: background-color 0.3s ease;
+}
+
+.hamburgerIcon{
+    width: 10px;
+    height: 7px;
+}
+
+.newAgent{
+    border: 1px solid var(--taskBtn);
+}
+
 /* PLAYGROUND CSS */
 .playGround {
-  background-color: pink;
-  width: 100%;
+    width: 100%;
+    background: url('../../assets/buildBg.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.agent-container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    padding: 10px;
+  }
+
+  .greenBackground {
+    background-color: var(--taskBtn);
+    transition: background-color 0.3s ease; 
+  }
+
+.newAgentInput{
+    width: 130px;
+    padding: 5px;
 }
