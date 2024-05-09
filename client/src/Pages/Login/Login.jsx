@@ -62,7 +62,7 @@ const Login = () => {
 
         // console.log(response);
 
-        localStorage.setItem("username", response.user_id);
+        localStorage.setItem("userId", response.user_id);
         localStorage.setItem("token",response.token)
         if(response.message == "Login successful"){
           Navigate("/home");

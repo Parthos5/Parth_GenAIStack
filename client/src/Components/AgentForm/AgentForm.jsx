@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AgentForm.css";
 import agentsIcon from "../../assets/agentsIcon.png";
+import { useParams } from "react-router-dom";
 
 export default function AgentForm(props) {
   const {
-    name,
+    agentName,
     role,
     goal,
     backstory,
@@ -12,13 +13,36 @@ export default function AgentForm(props) {
     task,
     tools_list,
     onChange,
+    uploadAgent,
   } = props;
+  const { stackId } = useParams();
+
+  // Local state for each input field
+  const [localAgentName, setLocalAgentName] = useState(agentName);
+  const [localRole, setLocalRole] = useState(role);
+  const [localGoal, setLocalGoal] = useState(goal);
+  const [localBackstory, setLocalBackstory] = useState(backstory);
+  const [localCapabilities, setLocalCapabilities] = useState(capabilities);
+  const [localTask, setLocalTask] = useState(task);
+  const [localToolsList, setLocalToolsList] = useState(tools_list);
+
+  // Function to handle key down events
+  const handleKeyDown = (e, field, value) => {
+    if (e.key === 'Enter') {
+      onChange(field, value);
+    }
+  };
+
+  // Function to handle input changes and update local state
+  const handleInputChange = (setter) => (e) => {
+    setter(e.target.value);
+  };
 
   return (
     <div className="agent-container">
       <div className="componentHead" style={{ marginBottom: "20px" }}>
         <img src={agentsIcon} alt="" />
-        Agent - {name}
+        Agent - {localAgentName}
       </div>
       <div className="agent-form">
         <div className="agent-form-group">
@@ -26,8 +50,9 @@ export default function AgentForm(props) {
           <input
             type="text"
             id="agentName"
-            value={name}
-            onChange={(e) => onChange("name", e.target.value)}
+            value={localAgentName}
+            onChange={handleInputChange(setLocalAgentName)}
+            onKeyDown={(e) => handleKeyDown(e, "agentName", localAgentName)}
           />
         </div>
         <div className="agent-form-group">
@@ -35,8 +60,9 @@ export default function AgentForm(props) {
           <input
             type="text"
             id="agentRole"
-            value={role}
-            onChange={(e) => onChange("role", e.target.value)}
+            value={localRole}
+            onChange={handleInputChange(setLocalRole)}
+            onKeyDown={(e) => handleKeyDown(e, "role", localRole)}
           />
         </div>
         <div className="agent-form-group">
@@ -44,8 +70,9 @@ export default function AgentForm(props) {
           <input
             type="text"
             id="agentGoal"
-            value={goal}
-            onChange={(e) => onChange("goal", e.target.value)}
+            value={localGoal}
+            onChange={handleInputChange(setLocalGoal)}
+            onKeyDown={(e) => handleKeyDown(e, "goal", localGoal)}
           />
         </div>
         <div className="agent-form-group">
@@ -53,16 +80,18 @@ export default function AgentForm(props) {
           <input
             type="text"
             id="agentBackstory"
-            value={backstory}
-            onChange={(e) => onChange("backstory", e.target.value)}
+            value={localBackstory}
+            onChange={handleInputChange(setLocalBackstory)}
+            onKeyDown={(e) => handleKeyDown(e, "backstory", localBackstory)}
           />
         </div>
         <div className="agent-form-group">
           <label htmlFor="agentCapability">Capability</label>
           <select
             id="agentCapability"
-            value={capabilities}
-            onChange={(e) => onChange("capabilities", e.target.value)}
+            value={localCapabilities}
+            onChange={handleInputChange(setLocalCapabilities)}
+            onKeyDown={(e) => handleKeyDown(e, "capability", localCapabilities)}
           >
             <option value="search_executor">Search Executor</option>
             <option value="llm_task_executor">LLM Task Executor</option>
@@ -73,20 +102,32 @@ export default function AgentForm(props) {
           <input
             type="text"
             id="agentTask"
-            value={task}
-            onChange={(e) => onChange("task", e.target.value)}
+            value={localTask}
+            onChange={handleInputChange(setLocalTask)}
+            onKeyDown={(e) => handleKeyDown(e, "task", localTask)}
           />
         </div>
         <div className="agent-form-group">
-          <label htmlFor="agentTask">Tools</label>
+          <label htmlFor="agentTools">Tools</label>
           <input
             type="text"
             id="agentTools"
-            value={tools_list}
-            placeholder='["wikisearch","duckducksearch"]'
-            onChange={(e) => onChange("tools_list", JSON.parse(e.target.value))}
+            value={localToolsList}
+            onChange={handleInputChange(setLocalToolsList)}
+            onKeyDown={(e) => handleKeyDown(e, "tools_list", localToolsList)}
           />
         </div>
+        <button
+          style={{
+            border: "1px solid grey",
+            textAlign: "center",
+            width: "50%",
+            fontSize: "12px",
+          }}
+          onClick={() => uploadAgent(localAgentName)}
+        >
+          Save
+        </button>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     element:<Home />
   },
   {
-    path:"/edit",
+    path:"/edit/:stackId",
     element:<Edit />
   },
 ]);

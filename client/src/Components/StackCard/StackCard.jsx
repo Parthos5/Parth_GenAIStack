@@ -8,10 +8,10 @@ export default function StackCard(props) {
   return (
     <div className="stackCardDiv">
       <div className="cardInfo">
-        <p className="stackName">{name}</p>
+        <p className="stackNameTitle">{name}</p>
         <p className="stackDesc">{description}</p>
       </div>
-      <Link to="/edit">
+      <Link to={`/edit/${cardId}`}>
       <div className="cardLink">Edit Stack <img src={arrowLink} alt="" /></div>
       </Link> 
     </div>

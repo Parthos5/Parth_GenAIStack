@@ -20,6 +20,8 @@ export default function Home() {
       id: "123456",
     },
   ]);
+
+
   const [newStack, setNewStack] = useState(false);
   const url = "http://127.0.0.1:8000";
   const navigate = useNavigate();
@@ -43,25 +45,55 @@ export default function Home() {
       }
     };
 
-    // Retrieve the token from localStorage
     const token = localStorage.getItem("token");
     if (token) {
       verifyToken(token);
     } else {
-      // If no token is found, redirect to the login page
       navigate("/login");
     }
   }, [navigate]);
+
+
+  useEffect(() => {
+    // Function to fetch stacks from the backend
+    const fetchStacks = async () => {
+      const userId = localStorage.getItem("userId");
+      if (!userId) {
+        // Handle the case where the user ID is not found
+        console.error("User ID not found");
+        return;
+      }
+
+      try {
+        const response = await fetch(`${url}/getStacks/${userId}`);
+        const data = await response.json()
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        console.log(data.stacks)
+        // const data = await response.json();/
+        setStacks(data.stacks);
+      } catch (error) {
+        console.error("Error fetching stacks:", error);
+      }
+    };
+
+    fetchStacks();
+  }, []);
 
   function handlePopup() {
     console.log("hello");
     setNewStack(!newStack);
   }
 
+  const handleCreate = async () => {
+    
+  };
+
   return (
     <div className="homeDiv">
       {/* Home Section 1 */}
-      <Navbar />
+      <Navbar />  
 
       {/* Home Section 2 */}
       <div className="hsect2 MyStacksSection">
@@ -89,7 +121,7 @@ export default function Home() {
       {stacks.length == 0 && <CreateNew onClick={handlePopup} />}
 
       {/* Create new stack form popup */}
-      {newStack && <CreateNewPopup onClick={handlePopup} />}
+      {newStack && <CreateNewPopup onCreate={handleCreate} onClick={handlePopup} />}
     </div>
   );
 }

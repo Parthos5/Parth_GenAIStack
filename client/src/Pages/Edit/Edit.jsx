@@ -1,9 +1,9 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import "./Edit.css";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import Tippy from "@tippyjs/react";
-import 'tippy.js/dist/tippy.css';
-import 'tippy.js/animations/shift-toward.css'; 
+import "tippy.js/dist/tippy.css";
+import "tippy.js/animations/shift-toward.css";
 import "react-grid-layout/css/styles.css";
 import editIcon from "../../assets/editIcon.png";
 import agentsIcon from "../../assets/agentsIcon.png";
@@ -17,6 +17,7 @@ import buildIcon from "../../assets/buildIcon.png";
 import runIcon from "../../assets/runIcon.png";
 import Navbar from "../../Components/Navbar/Navbar";
 import AgentForm from "../../Components/AgentForm/AgentForm";
+import { useNavigate, useParams } from "react-router-dom";
 
 export default function Edit() {
   const [agents, setAgents] = useState([
@@ -65,20 +66,79 @@ export default function Edit() {
   const [displayLLMs, setDisplayLLMs] = useState(false);
   const [newAgentName, setNewAgentName] = useState("");
   const [selectedModel, setSelectedModel] = useState(false);
-  const [readyToRun,setReadyToRun] = useState(false)
-  const [modelName,setModelName] = useState("phi3")
-  const [finalBuild,setFinalBuild] = useState({})
+  const [readyToRun, setReadyToRun] = useState(false);
+  const [modelName, setModelName] = useState("phi3");
+  const [finalBuild, setFinalBuild] = useState({});
+  const [stackName, setStackName] = useState("");
+  const { stackId } = useParams();
+  const url = "http://127.0.0.1:8000";
   const ResponsiveGridLayout = WidthProvider(Responsive);
+  const navigate = useNavigate();
 
-  const initialLayout = [
-    { i: "agent1", x: 0, y: 0, w: 2, h: 3 },
-    // Add more items to the layout as needed
-  ];
+  const initialLayout = [{ i: "agent1", x: 0, y: 0, w: 2, h: 3 }];
+
+  useEffect(() => {
+    // Function to fetch stack data from the backend
+    const fetchStack = async () => {
+      try {
+        const response = await fetch(`${url}/getOneStack/${stackId}`);
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        console.log(data);
+        setStackName(data.name);
+
+        const agentsResponse = await fetch(`${url}/getAgents/${stackId}`);
+        if (!agentsResponse.ok) {
+          throw new Error("Network response was not ok for fetching agents");
+        }
+        const agentsData = await agentsResponse.json();
+        console.log(agentsData);
+        setAgents(agentsData);
+      } catch (error) {
+        console.error("Error fetching stack data:", error);
+      }
+    };
+
+    if (stackId) {
+      console.log(stackId);
+      fetchStack();
+    }
+  }, []);
+  useEffect(() => {
+    const verifyToken = async (token) => {
+      try {
+        const response = await fetch("http://127.0.0.1:8000/verifyToken", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        });
+        if (!response.ok) {
+          throw new Error("Token verification failed");
+        }
+      } catch (error) {
+        alert("Please Login to access your account");
+        navigate("/login");
+      }
+    };
+
+    // Retrieve the token from localStorage
+    const token = localStorage.getItem("token");
+    if (token) {
+      verifyToken(token);
+    } else {
+      // If no token is found, redirect to the login page
+      navigate("/login");
+    }
+  }, [navigate]);
 
   function handleAddAgent() {
     if (newAgentName.trim() !== "") {
-      setAgents([...agents, { agenName: newAgentName }]);
-      setNewAgentName(""); // Reset input field
+      setAgents([...agents, { agentName: newAgentName }]);
+      setNewAgentName("");
     }
   }
 
@@ -98,19 +158,57 @@ export default function Edit() {
     const updatedAgents = [...agents];
     updatedAgents[index][field] = value;
     setAgents(updatedAgents);
-
+    setPgAgents(updatedAgents);
+    console.log(index);
+    console.log(field);
+    console.log(value);
     console.log(agents);
   };
 
   const handleBuild = () => {
+    console.log(pgAgents);
     const data = {
-        pgAgents: pgAgents,
-        modelName: modelName
-      };
-      console.log(data);
-      setFinalBuild(data)
-      console.log(finalBuild)
-  }
+      pgAgents: pgAgents,
+      modelName: modelName,
+    };
+    console.log(data);s
+    setFinalBuild(data);
+
+    // console.log(finalBuild);
+  };
+
+  const uploadAgent = async (agentName) => {
+    const agentToUpload = agents.find((agent) => agent.agentName == agentName);
+    if (!agentToUpload) {
+      console.error("Agent not found");
+      return;
+    }
+    console.log(agentToUpload);
+
+    const agentData = {
+      ...agentToUpload,
+      stack_id: stackId,
+    };
+
+    try {
+      const response = await fetch(`${url}/createAgent/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(agentData),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log("Agent uploaded:", data);
+    } catch (error) {
+      console.error("Error uploading agent:", error);
+    }
+  };
 
   const Playground = useMemo(
     () => (
@@ -129,25 +227,24 @@ export default function Edit() {
         >
           {pgAgents.map((agent, index) => (
             <div
-              key={agent.agentName}
+              key={index}
               className="agent-container"
               data-grid={{ x: index * 2, y: 0, w: 2, h: 3 }}
             >
               {/* <h3>{agent.name}</h3> */}
               <AgentForm
-                name={agent.agentName}
+                agentName={agent.agentName}
                 role={agent.role}
                 goal={agent.goal}
                 backstory={agent.backstory}
                 capabilities={agent.capabilities}
                 task={agent.task}
                 tools_list={agent.tools_list}
+                uploadAgent={uploadAgent}
                 onChange={(field, value) => onChangeAgent(index, field, value)}
               />
-              {/* ... other content ... */}
             </div>
           ))}
-          {/* Render additional containers as needed */}
         </ResponsiveGridLayout>
         {pgAgents.length == 0 && (
           <div className="dndPlaceholder">
@@ -161,7 +258,10 @@ export default function Edit() {
             </div>
           </Tippy>
           <Tippy content="Run" placement="left" animation="fade">
-            <div className="actionIconDiv runIcon" style={{ opacity: readyToRun ? 1 : 0.5 }}>
+            <div
+              className="actionIconDiv runIcon"
+              style={{ opacity: readyToRun ? 1 : 0.5 }}
+            >
               <img src={runIcon} className="actionIcon" alt="Run" />
             </div>
           </Tippy>
@@ -176,7 +276,19 @@ export default function Edit() {
       const updatedAgents = [...agents];
       updatedAgents[index] = { ...updatedAgents[index], add: true };
       setAgents(updatedAgents);
-      setPgAgents([...pgAgents, { agentName: name, add: true }]);
+      setPgAgents([
+        ...pgAgents,
+        {
+          agentName: name,
+          role: "",
+          goal: "",
+          backstory: "",
+          capability: "",
+          task: "",
+          tools_list: [],
+          add: true,
+        },
+      ]);
     } else {
       const updatedAgents = [...agents];
       updatedAgents[index] = { ...updatedAgents[index], add: false };
@@ -195,7 +307,7 @@ export default function Edit() {
       <div className="editContainer">
         <div className="sideBar">
           <div className="stackName">
-            Chat with pdf <img src={editIcon} className="editIcon" alt="" />
+            {stackName} <img src={editIcon} className="editIcon" alt="" />
           </div>
           <div className="stackComponents">
             <div className="componentDiv">

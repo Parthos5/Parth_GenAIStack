@@ -146,6 +146,13 @@ def get_stacks(user_id: int, db: Session = Depends(get_db)):
     stacks = db.query(models.Stack).filter(models.Stack.user_id == user_id).all()
     return {"stacks": stacks}
 
+@app.get("/getOneStack/{stack_id}", response_model=StackModel)
+def get_stack(stack_id: int, db: Session = Depends(get_db)):
+    stack = db.query(models.Stack).filter(models.Stack.id == stack_id).first()
+    if not stack:
+        raise HTTPException(status_code=404, detail="Stack not found")
+    return stack
+
 @app.post("/createAgent/", response_model=AgentRead)
 def create_agent(agent_data: AgentCreate, db: Session = Depends(get_db)):
     new_agent = models.Agent(
