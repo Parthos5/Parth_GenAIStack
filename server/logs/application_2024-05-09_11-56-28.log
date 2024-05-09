@@ -1,0 +1,91 @@
+2024-05-09 11:56:28 INFO::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\__init__.py:19:<module>:Logs stored at C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\logs
+2024-05-09 11:56:35 DEBUG::17012::C:\Python311\Lib\asyncio\proactor_events.py:629:__init__:Using proactor: IocpProactor
+2024-05-09 11:56:35 DEBUG::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\tools\utils.py:64:setGHGI:Number of HGI set to: 0
+2024-05-09 11:56:35 INFO::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\init_agent.py:91:kickOffAgents:Total number of HGI agents: 0
+2024-05-09 11:56:35 DEBUG::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\init_agent.py:41:agentInitSystem:kick-off of the program
+2024-05-09 11:56:35 DEBUG::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:19:__init__:created message broker infra with agents no 5
+2024-05-09 11:56:35 DEBUG::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:28:setGMapper:mapper object = {'name_to_index': {'WRITER': 0, 'EMAILER': 1}, 'index_to_name': {0: 'WRITER', 1: 'EMAILER'}, 'PQ_LIST': [<openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B0749C7D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B091D5650>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B091D5850>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B091D5A50>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B091D5C50>], 'COND_LIST': [<Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D5F00>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D5F80>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D6000>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D6080>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D6100>, 0)>], 'lock': <unlocked _thread.lock object at 0x0000025B091D6180>, 'timerPool': <openagi.queue.timer_pool.TimerList object at 0x0000025B091D61D0>}
+2024-05-09 11:56:35 INFO::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\init_agent.py:51:agentInitSystem:timer demon started
+2024-05-09 11:56:35 DEBUG::7748::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:115:run:timer thread started..................
+2024-05-09 11:56:35 DEBUG::7748::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-09 11:56:35 DEBUG::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:31:getGMapper:mapper object from get = {'name_to_index': {'WRITER': 0, 'EMAILER': 1}, 'index_to_name': {0: 'WRITER', 1: 'EMAILER'}, 'PQ_LIST': [<openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B0749C7D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B091D5650>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B091D5850>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B091D5A50>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B091D5C50>], 'COND_LIST': [<Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D5F00>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D5F80>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D6000>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D6080>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D6100>, 0)>], 'lock': <unlocked _thread.lock object at 0x0000025B091D6180>, 'timerPool': <openagi.queue.timer_pool.TimerList object at 0x0000025B091D61D0>}
+2024-05-09 11:56:35 DEBUG::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of WRITER is 0
+2024-05-09 11:56:35 DEBUG::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:43:get_COND_by_name:index of WRITER is 0
+2024-05-09 11:56:35 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:312:run:I am agent WRITER
+2024-05-09 11:56:35 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 11:56:35 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 11:56:35 DEBUG::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:350:start_agent:Agent: WRITER LLM: <test2.OllamaModel object at 0x0000025B621B8810>
+2024-05-09 11:56:35 DEBUG::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of EMAILER is 1
+2024-05-09 11:56:35 DEBUG::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:43:get_COND_by_name:index of EMAILER is 1
+2024-05-09 11:56:35 DEBUG::14464::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:312:run:I am agent EMAILER
+2024-05-09 11:56:35 DEBUG::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:350:start_agent:Agent: EMAILER LLM: <test2.OllamaModel object at 0x0000025B621B8810>
+2024-05-09 11:56:35 DEBUG::14464::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 11:56:35 DEBUG::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:31:getGMapper:mapper object from get = {'name_to_index': {'WRITER': 0, 'EMAILER': 1}, 'index_to_name': {0: 'WRITER', 1: 'EMAILER'}, 'PQ_LIST': [<openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B0749C7D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B091D5650>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B091D5850>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B091D5A50>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000025B091D5C50>], 'COND_LIST': [<Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D5F00>, 1)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D5F80>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D6000>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D6080>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000025B091D6100>, 0)>], 'lock': <unlocked _thread.lock object at 0x0000025B091D6180>, 'timerPool': <openagi.queue.timer_pool.TimerList object at 0x0000025B091D61D0>}
+2024-05-09 11:56:35 DEBUG::14464::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 11:56:35 DEBUG::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\pq.py:28:__init__:message contents:0:0::MessageType.PROF_AGENT_TRIGGER ::profAgent ->WRITER :HGI sending trigger message to start the execution
+2024-05-09 11:56:35 DEBUG::17012::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of WRITER is 0
+2024-05-09 11:56:40 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:319:run:agent WRITER retrieved message: {'priority': 0, 'perception_type': 0, 'message_type': <MessageType.PROF_AGENT_TRIGGER: 2>, 'srcAgent': 'profAgent', 'dstAgent': 'WRITER', 'body': 'HGI sending trigger message to start the execution'}
+2024-05-09 11:56:40 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:321:run:appended received message to list for aggregation
+2024-05-09 11:56:40 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:41:add_timer:current time: 1715236000.9202898 : internal 20000
+2024-05-09 11:56:40 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:46:add_timer:first timer inserted....
+2024-05-09 11:56:40 DEBUG::7748::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 19999.99897313118
+2024-05-09 11:56:40 INFO::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\utils\llmTasks.py:280:handleLLMTask:Running handleLLMTask:: <test2.OllamaModel object at 0x0000025B621B8810>
+2024-05-09 11:56:41 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:244:_new_conn:Starting new HTTP connection (1): localhost:11434
+2024-05-09 11:56:43 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:549:_make_request:http://localhost:11434 "POST /api/generate/ HTTP/1.1" 307 0
+2024-05-09 11:56:58 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:549:_make_request:http://localhost:11434 "POST /api/generate HTTP/1.1" 200 None
+2024-05-09 11:58:15 DEBUG::14464::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 11:58:15 DEBUG::14464::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 11:58:16 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:276:execute:response of agent WRITER is For Health Care Professionals:
+
+1. COVID-19 mutations are observed, with new variants being detected globally.
+2. Vaccine efficacy remains stable against current variants; however, studies continue on effectiveness for newer strains.
+3. Increased emphasis on booster shots to improve immunity and counter variant challenges.
+4. Evolving guidelines recommend updated vaccination protocols considering local COVID-19 trends and new variants.
+5. Continued importance of testing, tracing, and isolation strategies alongside vaccination efforts.
+6. Research on therapeutics advances to improve treatment outcomes for current and future strains.
+
+For the General Public:
+
+1. COVID-19 is undergoing changes with new variants emerging worldwide.
+2. Existing vaccines are still effective against the mainstream variants, but their effectiveness might vary with newer strains.
+3. Booster shots are recommended for enhanced protection and to address variant concerns.
+4. Vaccination recommendations may change depending on local COVID-19 trends and emerging variants; staying informed is essential.
+5. Alongside getting vaccinated, adherence to testing, tracing, and isolation measures remains crucial in controlling the spread of the virus.
+6. Developments in treatment options aim to improve care for those affected by COVID-19 and its evolving variants.
+2024-05-09 11:58:16 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:88:remove_timerWithNames:remove timer is called for WRITER LLM_TIMER
+2024-05-09 11:58:16 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:94:remove_timerWithNames:timer found for agent WRITER timer name LLM_TIMER  for removal
+2024-05-09 11:58:16 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:307:execute:WRITER..to.. ['EMAILER'] content:: For Health Care Professionals:
+
+1. COVID-19 mutations are observed, with new variants being detected globally.
+2. Vaccine efficacy remains stable against current variants; however, studies continue on effectiveness for newer strains.
+3. Increased emphasis on booster shots to improve immunity and counter variant challenges.
+4. Evolving guidelines recommend updated vaccination protocols considering local COVID-19 trends and new variants.
+5. Continued importance of testing, tracing, and isolation strategies alongside vaccination efforts.
+6. Research on therapeutics advances to improve treatment outcomes for current and future strains.
+
+For the General Public:
+
+1. COVID-19 is undergoing changes with new variants emerging worldwide.
+2. Existing vaccines are still effective against the mainstream variants, but their effectiveness might vary with newer strains.
+3. Booster shots are recommended for enhanced protection and to address variant concerns.
+4. Vaccination recommendations may change depending on local COVID-19 trends and emerging variants; staying informed is essential.
+5. Alongside getting vaccinated, adherence to testing, tracing, and isolation measures remains crucial in controlling the spread of the virus.
+6. Developments in treatment options aim to improve care for those affected by COVID-19 and its evolving variants.
+2024-05-09 11:58:16 DEBUG::19640::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\pq.py:28:__init__:message contents:0:0::MessageType.AGENT_MSG ::WRITER ->['EMAILER'] :For Health Care Professionals:
+
+1. COVID-19 mutations are observed, with new variants being detected globally.
+2. Vaccine efficacy remains stable against current variants; however, studies continue on effectiveness for newer strains.
+3. Increased emphasis on booster shots to improve immunity and counter variant challenges.
+4. Evolving guidelines recommend updated vaccination protocols considering local COVID-19 trends and new variants.
+5. Continued importance of testing, tracing, and isolation strategies alongside vaccination efforts.
+6. Research on therapeutics advances to improve treatment outcomes for current and future strains.
+
+For the General Public:
+
+1. COVID-19 is undergoing changes with new variants emerging worldwide.
+2. Existing vaccines are still effective against the mainstream variants, but their effectiveness might vary with newer strains.
+3. Booster shots are recommended for enhanced protection and to address variant concerns.
+4. Vaccination recommendations may change depending on local COVID-19 trends and emerging variants; staying informed is essential.
+5. Alongside getting vaccinated, adherence to testing, tracing, and isolation measures remains crucial in controlling the spread of the virus.
+6. Developments in treatment options aim to improve care for those affected by COVID-19 and its evolving variants.
+2024-05-09 11:58:16 DEBUG::7748::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
