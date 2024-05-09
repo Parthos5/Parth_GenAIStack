@@ -1,0 +1,340 @@
+2024-05-09 12:39:45 INFO::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\__init__.py:19:<module>:Logs stored at C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\logs
+2024-05-09 12:39:52 DEBUG::15776::C:\Python311\Lib\asyncio\proactor_events.py:629:__init__:Using proactor: IocpProactor
+2024-05-09 12:39:53 DEBUG::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\tools\utils.py:64:setGHGI:Number of HGI set to: 1
+2024-05-09 12:39:53 INFO::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\init_agent.py:91:kickOffAgents:Total number of HGI agents: 1
+2024-05-09 12:39:53 DEBUG::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\init_agent.py:41:agentInitSystem:kick-off of the program
+2024-05-09 12:39:53 DEBUG::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:19:__init__:created message broker infra with agents no 5
+2024-05-09 12:39:53 DEBUG::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:28:setGMapper:mapper object = {'name_to_index': {'WRITER': 0, 'EMAILER': 1}, 'index_to_name': {0: 'WRITER', 1: 'EMAILER'}, 'PQ_LIST': [<openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002091EC5C7D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000020920BF1DD0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000020920BF1FD0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000020920BF21D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000020920BF23D0>], 'COND_LIST': [<Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2680>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2700>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2780>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2800>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2880>, 0)>], 'lock': <unlocked _thread.lock object at 0x0000020920BF2900>, 'timerPool': <openagi.queue.timer_pool.TimerList object at 0x000002091F46B050>}
+2024-05-09 12:39:53 INFO::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\init_agent.py:51:agentInitSystem:timer demon started
+2024-05-09 12:39:53 DEBUG::4964::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:115:run:timer thread started..................
+2024-05-09 12:39:53 DEBUG::4964::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-09 12:39:53 DEBUG::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:31:getGMapper:mapper object from get = {'name_to_index': {'WRITER': 0, 'EMAILER': 1}, 'index_to_name': {0: 'WRITER', 1: 'EMAILER'}, 'PQ_LIST': [<openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002091EC5C7D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000020920BF1DD0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000020920BF1FD0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000020920BF21D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000020920BF23D0>], 'COND_LIST': [<Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2680>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2700>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2780>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2800>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2880>, 0)>], 'lock': <unlocked _thread.lock object at 0x0000020920BF2900>, 'timerPool': <openagi.queue.timer_pool.TimerList object at 0x000002091F46B050>}
+2024-05-09 12:39:53 DEBUG::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of WRITER is 0
+2024-05-09 12:39:53 DEBUG::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:43:get_COND_by_name:index of WRITER is 0
+2024-05-09 12:39:53 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:312:run:I am agent WRITER
+2024-05-09 12:39:53 DEBUG::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:350:start_agent:Agent: WRITER LLM: <test2.OllamaModel object at 0x0000020979809910>
+2024-05-09 12:39:53 DEBUG::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of EMAILER is 1
+2024-05-09 12:39:53 DEBUG::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:43:get_COND_by_name:index of EMAILER is 1
+2024-05-09 12:39:53 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 12:39:53 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 12:39:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:312:run:I am agent EMAILER
+2024-05-09 12:39:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 12:39:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 12:39:53 DEBUG::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:350:start_agent:Agent: EMAILER LLM: <test2.OllamaModel object at 0x0000020979809910>
+2024-05-09 12:39:53 DEBUG::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:31:getGMapper:mapper object from get = {'name_to_index': {'WRITER': 0, 'EMAILER': 1}, 'index_to_name': {0: 'WRITER', 1: 'EMAILER'}, 'PQ_LIST': [<openagi.queue.pq.MultiThreadPriorityQueue object at 0x000002091EC5C7D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000020920BF1DD0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000020920BF1FD0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000020920BF21D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000020920BF23D0>], 'COND_LIST': [<Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2680>, 1)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2700>, 1)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2780>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2800>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000020920BF2880>, 0)>], 'lock': <unlocked _thread.lock object at 0x0000020920BF2900>, 'timerPool': <openagi.queue.timer_pool.TimerList object at 0x000002091F46B050>}
+2024-05-09 12:39:53 DEBUG::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\pq.py:28:__init__:message contents:0:0::MessageType.PROF_AGENT_TRIGGER ::profAgent ->WRITER :HGI sending trigger message to start the execution
+2024-05-09 12:39:53 DEBUG::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of WRITER is 0
+2024-05-09 12:39:58 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:319:run:agent WRITER retrieved message: {'priority': 0, 'perception_type': 0, 'message_type': <MessageType.PROF_AGENT_TRIGGER: 2>, 'srcAgent': 'profAgent', 'dstAgent': 'WRITER', 'body': 'HGI sending trigger message to start the execution'}
+2024-05-09 12:39:58 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:321:run:appended received message to list for aggregation
+2024-05-09 12:39:58 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:41:add_timer:current time: 1715238598.0433185 : internal 20000
+2024-05-09 12:39:58 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:46:add_timer:first timer inserted....
+2024-05-09 12:39:58 DEBUG::4964::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 20000.0
+2024-05-09 12:39:58 INFO::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\utils\llmTasks.py:280:handleLLMTask:Running handleLLMTask:: <test2.OllamaModel object at 0x0000020979809910>
+2024-05-09 12:39:58 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:244:_new_conn:Starting new HTTP connection (1): localhost:11434
+2024-05-09 12:40:00 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:549:_make_request:http://localhost:11434 "POST /api/generate/ HTTP/1.1" 307 0
+2024-05-09 12:40:02 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:549:_make_request:http://localhost:11434 "POST /api/generate HTTP/1.1" 200 None
+2024-05-09 12:41:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 12:41:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 12:42:03 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:276:execute:response of agent WRITER is For Health Care Professionals:
+
+1. Increased COVID-19 cases observed globally, particularly in regions with lower vaccination rates.
+2. Emergence of new variants strains potentially affecting efficacy of current treatments and vaccines.
+3. Continued importance of monitoring for symptoms among healthcare workers to prevent outbreaks within medical facilities.
+4. Advancements in antiviral therapeutics showing promise in reducing severity of COVID-19, with ongoing research into new drugs and treatment regimens.
+5. Importance of maintaining proper infection control measures (PPE, sanitation) to limit transmission within hospitals.
+6. Updated protocols for patient care based on the latest scientific evidence and emerging data trends.
+7. Increasing collaboration between healthcare organizations worldwide for research, information sharing, and coordinated response efforts.
+
+For General Public:
+
+1. Rising COVID-19 cases emphasize the importance of staying updated with vaccinations and booster shots recommended by health authorities.
+2. Awareness of new variants may influence decisions on travel restrictions or self-isolation precautions.
+3. Recognizing symptoms such as fever, cough, and shortness of breath to seek medical attention promptly.
+4. Adherence to guidelines like masking, social distancing, and hand hygiene remains crucial in preventing the spread within communities.
+5. Emphasis on mental health during prolonged pandemic conditions with possible isolation or disruptions due to outbreaks.
+6. Encouragement for supporting local healthcare systems by following updates from trusted sources, participating in vaccination drives, and maintaining responsible behaviors.
+2024-05-09 12:42:03 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:88:remove_timerWithNames:remove timer is called for WRITER LLM_TIMER
+2024-05-09 12:42:03 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:94:remove_timerWithNames:timer found for agent WRITER timer name LLM_TIMER  for removal
+2024-05-09 12:42:03 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:307:execute:WRITER..to.. EMAILER content:: For Health Care Professionals:
+
+1. Increased COVID-19 cases observed globally, particularly in regions with lower vaccination rates.
+2. Emergence of new variants strains potentially affecting efficacy of current treatments and vaccines.
+3. Continued importance of monitoring for symptoms among healthcare workers to prevent outbreaks within medical facilities.
+4. Advancements in antiviral therapeutics showing promise in reducing severity of COVID-19, with ongoing research into new drugs and treatment regimens.
+5. Importance of maintaining proper infection control measures (PPE, sanitation) to limit transmission within hospitals.
+6. Updated protocols for patient care based on the latest scientific evidence and emerging data trends.
+7. Increasing collaboration between healthcare organizations worldwide for research, information sharing, and coordinated response efforts.
+
+For General Public:
+
+1. Rising COVID-19 cases emphasize the importance of staying updated with vaccinations and booster shots recommended by health authorities.
+2. Awareness of new variants may influence decisions on travel restrictions or self-isolation precautions.
+3. Recognizing symptoms such as fever, cough, and shortness of breath to seek medical attention promptly.
+4. Adherence to guidelines like masking, social distancing, and hand hygiene remains crucial in preventing the spread within communities.
+5. Emphasis on mental health during prolonged pandemic conditions with possible isolation or disruptions due to outbreaks.
+6. Encouragement for supporting local healthcare systems by following updates from trusted sources, participating in vaccination drives, and maintaining responsible behaviors.
+2024-05-09 12:42:03 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\pq.py:28:__init__:message contents:0:0::MessageType.AGENT_MSG ::WRITER ->EMAILER :For Health Care Professionals:
+
+1. Increased COVID-19 cases observed globally, particularly in regions with lower vaccination rates.
+2. Emergence of new variants strains potentially affecting efficacy of current treatments and vaccines.
+3. Continued importance of monitoring for symptoms among healthcare workers to prevent outbreaks within medical facilities.
+4. Advancements in antiviral therapeutics showing promise in reducing severity of COVID-19, with ongoing research into new drugs and treatment regimens.
+5. Importance of maintaining proper infection control measures (PPE, sanitation) to limit transmission within hospitals.
+6. Updated protocols for patient care based on the latest scientific evidence and emerging data trends.
+7. Increasing collaboration between healthcare organizations worldwide for research, information sharing, and coordinated response efforts.
+
+For General Public:
+
+1. Rising COVID-19 cases emphasize the importance of staying updated with vaccinations and booster shots recommended by health authorities.
+2. Awareness of new variants may influence decisions on travel restrictions or self-isolation precautions.
+3. Recognizing symptoms such as fever, cough, and shortness of breath to seek medical attention promptly.
+4. Adherence to guidelines like masking, social distancing, and hand hygiene remains crucial in preventing the spread within communities.
+5. Emphasis on mental health during prolonged pandemic conditions with possible isolation or disruptions due to outbreaks.
+6. Encouragement for supporting local healthcare systems by following updates from trusted sources, participating in vaccination drives, and maintaining responsible behaviors.
+2024-05-09 12:42:03 DEBUG::4964::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-09 12:42:03 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of EMAILER is 1
+2024-05-09 12:42:03 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 12:42:03 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:319:run:agent EMAILER retrieved message: {'priority': 0, 'perception_type': 0, 'message_type': <MessageType.AGENT_MSG: 5>, 'srcAgent': 'WRITER', 'dstAgent': 'EMAILER', 'body': 'For Health Care Professionals:\n\n1. Increased COVID-19 cases observed globally, particularly in regions with lower vaccination rates.\n2. Emergence of new variants strains potentially affecting efficacy of current treatments and vaccines.\n3. Continued importance of monitoring for symptoms among healthcare workers to prevent outbreaks within medical facilities.\n4. Advancements in antiviral therapeutics showing promise in reducing severity of COVID-19, with ongoing research into new drugs and treatment regimens.\n5. Importance of maintaining proper infection control measures (PPE, sanitation) to limit transmission within hospitals.\n6. Updated protocols for patient care based on the latest scientific evidence and emerging data trends.\n7. Increasing collaboration between healthcare organizations worldwide for research, information sharing, and coordinated response efforts.\n\nFor General Public:\n\n1. Rising COVID-19 cases emphasize the importance of staying updated with vaccinations and booster shots recommended by health authorities.\n2. Awareness of new variants may influence decisions on travel restrictions or self-isolation precautions.\n3. Recognizing symptoms such as fever, cough, and shortness of breath to seek medical attention promptly.\n4. Adherence to guidelines like masking, social distancing, and hand hygiene remains crucial in preventing the spread within communities.\n5. Emphasis on mental health during prolonged pandemic conditions with possible isolation or disruptions due to outbreaks.\n6. Encouragement for supporting local healthcare systems by following updates from trusted sources, participating in vaccination drives, and maintaining responsible behaviors.'}
+2024-05-09 12:42:03 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 12:42:03 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:321:run:appended received message to list for aggregation
+2024-05-09 12:42:03 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:41:add_timer:current time: 1715238723.975012 : internal 20000
+2024-05-09 12:42:03 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:46:add_timer:first timer inserted....
+2024-05-09 12:42:03 DEBUG::4964::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 20000.0
+2024-05-09 12:42:03 INFO::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\utils\llmTasks.py:280:handleLLMTask:Running handleLLMTask:: <test2.OllamaModel object at 0x0000020979809910>
+2024-05-09 12:42:03 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:244:_new_conn:Starting new HTTP connection (1): localhost:11434
+2024-05-09 12:42:06 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:549:_make_request:http://localhost:11434 "POST /api/generate/ HTTP/1.1" 307 0
+2024-05-09 12:42:10 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:549:_make_request:http://localhost:11434 "POST /api/generate HTTP/1.1" 200 None
+2024-05-09 12:43:43 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 12:43:43 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 12:45:23 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 12:45:23 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 12:47:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 12:47:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 12:48:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 12:48:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 12:50:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:276:execute:response of agent EMAILER is Subject: Update on COVID-19 Developments - Health Care Professionals & General Public Version 1
+
+---
+
+**To: Healthcare Professionals**
+
+Dear Colleagues,
+
+As we continue to navigate through these challenging times due to the COVID-19 pandemic, it is crucial that we stay informed and vigilant. Below are key points from recent updates relevant to your practice and patient care:
+
+
+1. **Increased Cases Worldwide**: Globally, there has been a significant rise in new cases of COVID-19, notably in regions with lower vaccination rates. It is imperative that we remain cautious and prepared to manage potential surges in our facilities.
+
+2. **Variants & Treatments**: The emergence of new variants necessitates heightened awareness regarding their impact on current treatments and vaccines, including antiviral therapeutics showing promise in reducing COVID-19 severity.
+
+3. **Prevention Measures**: Continuous monitoring for symptoms among our staff is essential to prevent outbreaks within healthcare settings. Adhering strictly to updated protocols and maintaining rigorous infection control measures (e.g., PPE, sanitation) will be critical in curtailing virus transmission.
+
+4. **Patient Care Protocols**: Stay abreast of the evolving guidelines based on recent scientific evidence and emerging data trends to ensure optimal care for our patients.
+
+5. **Global Collaboration**: Our commitment to collaborating with healthcare organizations worldwide will be vital in fostering research, sharing information, and coordinating a unified response effort.
+
+Please continue to prioritize the well-being of both yourselves and those under your care during these trying times.
+
+---
+
+**To: General Public**
+
+Dear Community Member,
+
+In light of increasing COVID-19 cases around the globe, it's essential for everyone to stay informed and proactive in their health practices. Here are important updates tailored for you:
+
+
+1. **Stay Vaccinated**: With rising cases, please ensure that your vaccination status is up to date, including booster shots as recommended by public health authorities.
+
+2. **Be Alert to Variants**: Stay informed about emerging variants and adjust travel plans or self-isolation measures accordingly for the safety of yourself and others.
+
+3. Written in a clear, concise manner suitable for both medical professionals and the general public, these emails cover essential topics while maintaining context. The structure separates the information into two distinct sections with subject lines that clearly indicate the audience, ensuring relevance and ease of access for each group's specific needs.
+
+Subject-Summary: COVID-19 Updates - Healthcare Professionals & General Public Version 1
+Details to File (separate documents or email attachments as required):
+
+**Health Care Professionals Section Detail Document/Email Attachment:**
+
+- Subject Line: Essential COVID-19 Developments for Healthcare Providers
+- Background Information on Variants, Vaccines, and Treatment Advancements
+- Updated Infection Control Guidelines & Patient Care Protocols
+- Importance of Collaboration in Global Pandemic Response Efforts
+
+**General Public Section Detail Document/Email Attachment:**
+
+- Subject Line: COVID-19 Updates for the Community
+- Vaccination Recommendations and Variants Awareness
+- Symptom Recognition and Seeking Medical Attention
+- Prevention Strategies to Limit Spread within Communities
+- Mental Health Resources and Support during Prolonged Pandemic Conditions
+2024-05-09 12:50:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:88:remove_timerWithNames:remove timer is called for EMAILER LLM_TIMER
+2024-05-09 12:50:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:94:remove_timerWithNames:timer found for agent EMAILER timer name LLM_TIMER  for removal
+2024-05-09 12:50:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:140:sendMessagetoHGI:final message to HGI= Subject: Update on COVID-19 Developments - Health Care Professionals & General Public Version 1
+
+---
+
+**To: Healthcare Professionals**
+
+Dear Colleagues,
+
+As we continue to navigate through these challenging times due to the COVID-19 pandemic, it is crucial that we stay informed and vigilant. Below are key points from recent updates relevant to your practice and patient care:
+
+
+1. **Increased Cases Worldwide**: Globally, there has been a significant rise in new cases of COVID-19, notably in regions with lower vaccination rates. It is imperative that we remain cautious and prepared to manage potential surges in our facilities.
+
+2. **Variants & Treatments**: The emergence of new variants necessitates heightened awareness regarding their impact on current treatments and vaccines, including antiviral therapeutics showing promise in reducing COVID-19 severity.
+
+3. **Prevention Measures**: Continuous monitoring for symptoms among our staff is essential to prevent outbreaks within healthcare settings. Adhering strictly to updated protocols and maintaining rigorous infection control measures (e.g., PPE, sanitation) will be critical in curtailing virus transmission.
+
+4. **Patient Care Protocols**: Stay abreast of the evolving guidelines based on recent scientific evidence and emerging data trends to ensure optimal care for our patients.
+
+5. **Global Collaboration**: Our commitment to collaborating with healthcare organizations worldwide will be vital in fostering research, sharing information, and coordinating a unified response effort.
+
+Please continue to prioritize the well-being of both yourselves and those under your care during these trying times.
+
+---
+
+**To: General Public**
+
+Dear Community Member,
+
+In light of increasing COVID-19 cases around the globe, it's essential for everyone to stay informed and proactive in their health practices. Here are important updates tailored for you:
+
+
+1. **Stay Vaccinated**: With rising cases, please ensure that your vaccination status is up to date, including booster shots as recommended by public health authorities.
+
+2. **Be Alert to Variants**: Stay informed about emerging variants and adjust travel plans or self-isolation measures accordingly for the safety of yourself and others.
+
+3. Written in a clear, concise manner suitable for both medical professionals and the general public, these emails cover essential topics while maintaining context. The structure separates the information into two distinct sections with subject lines that clearly indicate the audience, ensuring relevance and ease of access for each group's specific needs.
+
+Subject-Summary: COVID-19 Updates - Healthcare Professionals & General Public Version 1
+Details to File (separate documents or email attachments as required):
+
+**Health Care Professionals Section Detail Document/Email Attachment:**
+
+- Subject Line: Essential COVID-19 Developments for Healthcare Providers
+- Background Information on Variants, Vaccines, and Treatment Advancements
+- Updated Infection Control Guidelines & Patient Care Protocols
+- Importance of Collaboration in Global Pandemic Response Efforts
+
+**General Public Section Detail Document/Email Attachment:**
+
+- Subject Line: COVID-19 Updates for the Community
+- Vaccination Recommendations and Variants Awareness
+- Symptom Recognition and Seeking Medical Attention
+- Prevention Strategies to Limit Spread within Communities
+- Mental Health Resources and Support during Prolonged Pandemic Conditions
+2024-05-09 12:50:13 DEBUG::4964::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-09 12:50:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\tools\utils.py:70:isLastHGI:Number of HGI reduced to: 0
+2024-05-09 12:50:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:303:execute:before wake for exit..........
+2024-05-09 12:50:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 12:50:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 12:50:13 INFO::15776::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\init_agent.py:64:triggerAgent:final exit
+2024-05-09 12:50:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 12:50:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 12:51:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 12:51:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 12:52:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 12:52:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 12:53:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 12:53:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 12:53:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 12:53:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 12:55:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 12:55:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 12:55:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 12:55:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 12:56:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 12:56:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 12:57:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 12:57:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 12:58:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 12:58:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 12:58:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 12:58:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:00:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:00:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:00:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:00:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:01:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:01:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:02:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:02:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:03:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:03:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:03:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:03:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:05:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:05:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:05:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:05:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:06:53 DEBUG::4964::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-09 13:06:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:06:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:07:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:07:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:08:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:08:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:08:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:08:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:10:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:10:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:10:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:10:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:11:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:11:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:12:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:12:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:13:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:13:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:13:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:13:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:15:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:15:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:15:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:15:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:16:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:16:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:17:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:17:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:18:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:18:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:18:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:18:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:20:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:20:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:20:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:20:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:21:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:21:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:22:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:22:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:23:33 DEBUG::4964::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-09 13:23:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:23:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:23:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:23:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:25:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:25:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:25:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:25:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:26:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:26:53 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:27:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:27:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:28:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:28:33 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:28:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:28:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:30:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:30:13 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:30:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:30:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:31:54 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:31:54 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:32:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:32:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:33:34 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:33:34 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:33:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:33:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0

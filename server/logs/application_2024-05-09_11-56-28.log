@@ -89,3 +89,5 @@ For the General Public:
 5. Alongside getting vaccinated, adherence to testing, tracing, and isolation measures remains crucial in controlling the spread of the virus.
 6. Developments in treatment options aim to improve care for those affected by COVID-19 and its evolving variants.
 2024-05-09 11:58:16 DEBUG::7748::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-09 11:59:55 DEBUG::14464::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 11:59:55 DEBUG::14464::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1

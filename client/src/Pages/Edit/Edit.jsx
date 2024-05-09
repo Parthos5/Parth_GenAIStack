@@ -18,6 +18,7 @@ import runIcon from "../../assets/runIcon.png";
 import Navbar from "../../Components/Navbar/Navbar";
 import AgentForm from "../../Components/AgentForm/AgentForm";
 import { useNavigate, useParams } from "react-router-dom";
+import ChatPopup from "../../Components/ChatPopup/ChatPopup";
 
 export default function Edit() {
   const [agents, setAgents] = useState([
@@ -70,6 +71,7 @@ export default function Edit() {
   const [modelName, setModelName] = useState("phi3");
   const [finalBuild, setFinalBuild] = useState({});
   const [stackName, setStackName] = useState("");
+  const [displayChat,setDisplayChat] = useState(false)
   const { stackId } = useParams();
   const url = "http://127.0.0.1:8000";
   const ResponsiveGridLayout = WidthProvider(Responsive);
@@ -279,6 +281,7 @@ export default function Edit() {
           <Tippy content="Run" placement="left" animation="fade">
             <div
               className="actionIconDiv runIcon opacity05"
+              onClick={()=>setDisplayChat(!displayAgent)}
             >
               <img src={runIcon} className="actionIcon" alt="Run" />
             </div>
@@ -444,6 +447,7 @@ export default function Edit() {
         </div>
         {Playground}
       </div>
+      {displayChat && <ChatPopup />}
     </div>
   );
 }

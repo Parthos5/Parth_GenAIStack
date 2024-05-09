@@ -4,6 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
   Route,
+  Navigate,
   Link,
 } from "react-router-dom";
 import Login from "./Pages/Login/Login";
@@ -12,6 +13,10 @@ import Home from "./Pages/Home/Home";
 import Edit from "./Pages/Edit/Edit";
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Navigate to="/login" replace />,
+  },
   {
     path: "/login",
     element: <Login />,

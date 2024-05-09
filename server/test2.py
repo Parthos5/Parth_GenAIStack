@@ -11,6 +11,7 @@ from typing import List
 from models import Agent as webAgent
 
 agent_list = []
+mainResp = ""
 
 class OllamaConfigModel(LLMConfigModel):
     """Configuration model for OLLAMA."""
@@ -50,8 +51,9 @@ class OllamaModel(LLMBaseModel):
 def onResultHGI(agentName, result, consumerAgent):
     feedback = "Pass"
     action = "None"
+    mainResp = result
     logging.debug(f"{agentName}:TO:{consumerAgent}-> {result}")
-    return result, feedback, action
+    return result, feedback, action,mainResp
 
 def run_agents(updated_pg_agents: List[webAgent]) -> str:
     global agent_list
@@ -69,17 +71,17 @@ def run_agents(updated_pg_agents: List[webAgent]) -> str:
             backstory=web_agent.backstory,
             task=web_agent.task,
             capability=web_agent.capability,
-            output_consumer_agent=[web_agent.output_consumer_agent]
+            output_consumer_agent=web_agent.output_consumer_agent
             # Add other necessary attributes here
         )
         # agent.llm = llm  # Set the llm attribute to the loaded LLM model
         final_agents.append(agent)
-    output = kickOffAgents(final_agents, [final_agents[0]], llm=llm)
+    kickOffAgents(final_agents, [final_agents[0]], llm=llm)
     # For demonstration purposes, let's assume the response is a string
-    response = output
+    # response = output
     
     # Return the response
-    return response
+    return mainResp
 
 # Example Usage:
 if __name__ == "__main__":
