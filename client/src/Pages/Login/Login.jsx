@@ -18,8 +18,8 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [selectedOption, setSelectedOption] = useState("University");
-
   const [showForgotPasswordPopup, setShowForgotPasswordPopup] = useState(false);
+  const url = "http://127.0.0.1:8000";
 
   const handleForgotPasswordClick = () => {
     setShowForgotPasswordPopup(true);
@@ -43,27 +43,30 @@ const Login = () => {
     e.preventDefault();
 
     const sendData = async () => {
-      let endpoint = "/api/auth/userLogin";
+      let endpoint = "/login";
       try {
-        console.log(selectedOption);
+        // console.log(selectedOption);
         // console.log(selectedOption);
         // console.log(selectedOption)
-        console.log(endpoint);
+        // console.log(endpoint);
         // console.log("Sending request to:", `${url}${endpoint}`);
-        console.log("Sending data:", { email: username, password: password });
+        // console.log("Sending data:", { email: username, password: password });
 
-        // const response = await axios.post(`${url}${endpoint}`, {
-        //   email: username,
-        //   password: password,
-        // });
-        // // /api/v1/university/login
-        // // /api/v1/college/college_faculty/login
-        // // /api/v1/college/student/login
+        const response = await fetch(`${url}${endpoint}`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email: username, password: password }),
+        }).then((data)=>data.json());
+
         // console.log(response);
 
-        localStorage.setItem("username", response.data.username);
-
-        Navigate("/dashboard");
+        localStorage.setItem("username", response.user_id);
+        localStorage.setItem("token",response.token)
+        if(response.message == "Login successful"){
+          Navigate("/home");
+        }
       } catch (error) {
         console.log(error);
       }
@@ -72,7 +75,7 @@ const Login = () => {
     sendData();
   };
 
-  console.log(selectedOption);
+  // console.log(selectedOption);
 
   const [passwordShown, setPasswordShown] = useState(false);
   const togglePasswordVisiblity = () => {
@@ -104,7 +107,7 @@ const Login = () => {
 
           <form className="form-section" onSubmit={handleSubmit}>
             <div className="form-wrapper">
-              <h2>WELCOME BACK! 👋🏻</h2>
+              <h2>WELCOME BACK!👋🏻</h2>
               <p>Enter your credentials to access your account.</p>
 
               <div className="input-container">

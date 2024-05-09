@@ -19,8 +19,8 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [selectedOption, setSelectedOption] = useState("University");
-
   const [showForgotPasswordPopup, setShowForgotPasswordPopup] = useState(false);
+  const url = "http://127.0.0.1:8000";
 
   const handleForgotPasswordClick = () => {
     setShowForgotPasswordPopup(true);
@@ -44,32 +44,36 @@ const Register = () => {
     e.preventDefault();
 
     const sendData = async () => {
-      let endpoint = "/api/auth/userRegister";
+      let endpoint = "/signup/";
       try {
-        console.log(selectedOption);
+        // console.log(selectedOption);
         // console.log(selectedOption);
         // console.log(selectedOption)
-        console.log(endpoint);
+        // console.log(endpoint);
         // console.log("Sending request to:", `${url}${endpoint}`);
-        console.log("Sending data:", {
-          email: email,
-          username: username,
-          password: password,
-        });
-
-        // const response = await axios.post(`${url}${endpoint}`, {
+        // console.log("Sending data:", {
         //   email: email,
         //   username: username,
         //   password: password,
         // });
-        // // /api/v1/university/login
-        // // /api/v1/college/college_faculty/login
-        // // /api/v1/college/student/login
+
+        const response = await fetch(`${url}${endpoint}`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: email,
+            username: username,
+            password: password,
+          }),
+        }).then((data)=>data.json());
         // console.log(response);
 
-        localStorage.setItem("email", response.data.email);
+        localStorage.setItem("email", response.user.email);
+        localStorage.setItem("id", response.user.id);
 
-        Navigate("/dashboard");
+        Navigate("/login");
       } catch (error) {
         console.log(error);
       }
@@ -78,7 +82,7 @@ const Register = () => {
     sendData();
   };
 
-  console.log(selectedOption);
+  // console.log(selectedOption);
 
   const [passwordShown, setPasswordShown] = useState(false);
   const togglePasswordVisiblity = () => {
@@ -99,18 +103,19 @@ const Register = () => {
 
             <div className="content-container">
               <h1 className="section-heading">
-              Start living better <br></br> with GenAI Stack
+                Start living better <br></br> with GenAI Stack
               </h1>
               <p className="section-paragraph">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam fuga quam placeat corrupti architecto impedit.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laboriosam fuga quam placeat corrupti architecto impedit.
               </p>
             </div>
           </div>
 
           <form className="form-section" onSubmit={handleSubmit}>
             <div className="form-wrapper">
-              <h2>WELCOME BACK! 👋🏻</h2>
-              <p>Enter your credentials to access your account.</p>
+              <h2>WELCOME! 👋🏻</h2>
+              <p>Enter the credential to create your account.</p>
 
               <div className="input-container">
                 {/* <div className="dropDownDiv">

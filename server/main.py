@@ -1,14 +1,30 @@
 import requests
 from typing import Union,List,Annotated
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI, HTTPException, Depends,Security
+from fastapi.security import OAuth2PasswordBearer
 import models
 from database import engine,SessionLocal
 from sqlalchemy.orm import Session
 import uvicorn
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
+import jwt
+from datetime import datetime, timedelta
+
+SECRET_KEY = "thisismysecretkey"
+ALGORITHM = "HS256"
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/token")
 
 app = FastAPI()
 models.Base.metadata.create_all(bind=engine)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins for now because of assignment time constraints
+    allow_credentials=True,
+    allow_methods=["*"],  
+    allow_headers=["*"],  
+)
 
 def get_db():
     db = SessionLocal()
@@ -19,6 +35,9 @@ def get_db():
 
 dp_dependency = Depends(get_db)
 
+class TokenData(BaseModel):
+    user_id: int | None = None
+    
 class UserSignup(BaseModel):
     username: str
     email: str
@@ -47,7 +66,7 @@ class AgentCreate(BaseModel):
     goal: str
     backstory: str
     task: str
-    capability: str # Assuming capability can have multiple values
+    capability: str
     stack_id: int
     
 class AgentRead(BaseModel):
@@ -67,6 +86,21 @@ class AgentRead(BaseModel):
 def read_root():
     return {"Hello": "World"}
 
+@app.post("/verifyToken")
+def verify_token(token: str = Security(oauth2_scheme)):
+    try:
+        # Decode the received token
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        user_id: int = payload.get("user_id")
+        if user_id is None:
+            raise HTTPException(status_code=400, detail="Invalid token payload")
+        # Token is valid, return the user ID (or other user data if needed)
+        return {"user_id": user_id}
+    except jwt.ExpiredSignatureError:
+        raise HTTPException(status_code=401, detail="Token has expired")
+    except jwt.InvalidTokenError as e:
+        raise HTTPException(status_code=401, detail="Invalid token")
+
 @app.post("/signup/")
 def signup_user(user_data: UserSignup, db: Session = dp_dependency):
     user = models.Users(username=user_data.username, email=user_data.email, password=user_data.password)
@@ -79,7 +113,16 @@ def signup_user(user_data: UserSignup, db: Session = dp_dependency):
 def login_user(login_data: UserLogin, db: Session = dp_dependency):
     user = db.query(models.Users).filter(models.Users.email == login_data.email, models.Users.password == login_data.password).first()
     if user:
-        return {"message": "Login successful", "user_id": user.id}
+
+        expiration_time = datetime.utcnow() + timedelta(days=1)
+        
+        token_payload = {
+            "user_id": user.id,
+            "exp": expiration_time
+        }
+        
+        token = jwt.encode(token_payload, SECRET_KEY, algorithm=ALGORITHM)
+        return {"message": "Login successful", "user_id": user.id, "token": token}
     else:
         raise HTTPException(status_code=404, detail="User not found")
 
@@ -105,14 +148,13 @@ def get_stacks(user_id: int, db: Session = Depends(get_db)):
 
 @app.post("/createAgent/", response_model=AgentRead)
 def create_agent(agent_data: AgentCreate, db: Session = Depends(get_db)):
-    # Create a new Agent instance
     new_agent = models.Agent(
         agentName=agent_data.agentName,
         role=agent_data.role,
         goal=agent_data.goal,
         backstory=agent_data.backstory,
         task=agent_data.task,
-        capability=agent_data.capability,  # Join capabilities into a single string
+        capability=agent_data.capability, 
         stack_id=agent_data.stack_id
     )
     db.add(new_agent)
