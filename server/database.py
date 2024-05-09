@@ -6,6 +6,6 @@ URL_DATABASE = "postgresql://postgres:test1234!@localhost:5432/GenAiStack"
 
 engine = create_engine(URL_DATABASE)
 
-SessionLocal = sessionmaker(autocommit=False,autoFlush=False,bind=engine)
+SessionLocal = sessionmaker(autocommit=False,bind=engine)
 
-Base = declarative_base
+Base = declarative_base()
