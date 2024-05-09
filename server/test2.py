@@ -2,13 +2,13 @@ import os
 os.environ['OPENAGI_CONFIG_PATH'] = "C:/Users/thosp/OneDrive/Documents/GitHub/Parth_GenAIStack/server/config/config.yaml"
 import logging
 from langchain_community.llms import Ollama
-from openagi.agent import Agent
+from openagi.agent import Agent as OpenAGIAgent
 from openagi.init_agent import kickOffAgents
 from openagi.llms.base import LLMBaseModel, LLMConfigModel
 from openagi.utils.yamlParse import read_yaml_config
 from openagi.tools.integrations import DuckDuckGoSearchTool
 from typing import List
-from models import Agent
+from models import Agent as webAgent
 
 agent_list = []
 
@@ -53,18 +53,28 @@ def onResultHGI(agentName, result, consumerAgent):
     logging.debug(f"{agentName}:TO:{consumerAgent}-> {result}")
     return result, feedback, action
 
-def run_agents(updated_pg_agents: List[Agent]) -> str:
+def run_agents(updated_pg_agents: List[webAgent]) -> str:
     global agent_list
     # Update the global agent_list with the updated_pg_agents
     agent_list = updated_pg_agents
-    
+    final_agents = []
     # Your logic to run the agents and generate a response
     config = OllamaModel.load_from_yaml_config()
     llm = OllamaModel(config=config)
-    for agent in agent_list:
-        agent.llm = llm
-    output = kickOffAgents(agent_list, [agent_list[0]], llm=llm)
-    
+    for web_agent in updated_pg_agents:
+        agent = OpenAGIAgent(
+            agentName=web_agent.agentName,
+            role=web_agent.role,
+            goal=web_agent.goal,
+            backstory=web_agent.backstory,
+            task=web_agent.task,
+            capability=web_agent.capability,
+            output_consumer_agent=[web_agent.output_consumer_agent]
+            # Add other necessary attributes here
+        )
+        # agent.llm = llm  # Set the llm attribute to the loaded LLM model
+        final_agents.append(agent)
+    output = kickOffAgents(final_agents, [final_agents[0]], llm=llm)
     # For demonstration purposes, let's assume the response is a string
     response = output
     
