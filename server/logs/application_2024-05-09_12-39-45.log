@@ -338,3 +338,73 @@ Details to File (separate documents or email attachments as required):
 2024-05-09 13:33:34 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
 2024-05-09 13:33:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
 2024-05-09 13:33:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:35:14 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:35:14 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:35:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:35:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:36:54 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:36:54 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:37:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:37:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:38:34 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:38:34 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:38:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:38:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:40:13 DEBUG::4964::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-09 13:40:14 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:40:14 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:40:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:40:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:41:54 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:41:54 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:42:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:42:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:43:34 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:43:34 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:43:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:43:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:45:14 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:45:14 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:45:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:45:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:46:54 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:46:54 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:47:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:47:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:48:34 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:48:34 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:48:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:48:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:50:14 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:50:14 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:50:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:50:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:51:54 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:51:54 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:52:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:52:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:53:34 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:53:34 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:53:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:53:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:55:14 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:55:14 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:55:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:55:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:56:53 DEBUG::4964::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-09 13:56:54 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:56:54 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:57:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:57:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 13:58:34 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 13:58:34 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 13:58:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 13:58:44 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 14:00:14 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 14:00:14 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 14:00:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 14:00:24 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-09 14:01:54 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-09 14:01:54 DEBUG::8508::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-09 14:02:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-09 14:02:04 DEBUG::14892::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
