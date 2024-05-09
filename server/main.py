@@ -81,6 +81,28 @@ class AgentRead(BaseModel):
 
     class Config:
         orm_mode = True
+
+class Agent(BaseModel):
+    agentName: str
+    role: str
+    goal: str
+    backstory: str
+    capability: str
+    task: str
+    output_consumer_agent: List[str] = []
+# class PgAgent(BaseModel):
+#     agentName: str
+#     role: str
+#     goal: str
+#     backstory: str
+#     capability: str
+#     task: str
+#     tools_list: List[str]
+#     add: bool
+
+class BuildData(BaseModel):
+    pgAgents: List[Agent]
+    modelName: str
         
 @app.get("/")
 def read_root():
@@ -173,6 +195,34 @@ def create_agent(agent_data: AgentCreate, db: Session = Depends(get_db)):
 def get_agents_by_stack_id(stack_id: int, db: Session = Depends(get_db)):
     agents = db.query(models.Agent).filter(models.Agent.stack_id == stack_id).all()
     return agents
+
+def generate_pg_agents(pg_agents: List[Agent]) -> List[Agent]:
+    updated_agents = []
+    for i, agent in enumerate(pg_agents):
+        if i < len(pg_agents) - 1:
+            agent.output_consumer_agent = [pg_agents[i + 1].agentName]
+        else:
+            agent.output_consumer_agent = ["HGI"]
+        updated_agents.append(agent)
+    return updated_agents
+
+@app.post("/build/")
+def build_agents(build_data: BuildData, db: Session = Depends(get_db)):
+    updated_pg_agents = generate_pg_agents(build_data.pgAgents)
+    print(updated_pg_agents)
+    print(build_data.modelName)
+    global stored_updated_pg_agents
+    stored_updated_pg_agents = updated_pg_agents
+    return {"message": "Received build data","updated_pg_agents": updated_pg_agents}
+
+@app.get("/run/")
+def run_agents_endpoint():
+    # Call the function in test2.py and pass the stored_updated_pg_agents
+    from test2 import run_agents
+    response_from_test2 = run_agents(stored_updated_pg_agents)
+    # Return the response from test2.py
+    return {"response_from_test2": response_from_test2}
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000)

@@ -165,16 +165,35 @@ export default function Edit() {
     console.log(agents);
   };
 
-  const handleBuild = () => {
-    console.log(pgAgents);
+  const handleBuild = async () => {
     const data = {
       pgAgents: pgAgents,
       modelName: modelName,
     };
-    console.log(data);s
-    setFinalBuild(data);
 
-    // console.log(finalBuild);
+    try {
+      const response = await fetch(`${url}/build/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const result = await response.json();
+      console.log("Build successful:", result);
+      setFinalBuild(result);
+      setReadyToRun(true)
+      const runIconDiv = document.querySelector(".runIcon");
+      runIconDiv.classList.add("opacity1");
+      runIconDiv.classList.remove("opacity05");
+    } catch (error) {
+      console.error("Error during build process:", error);
+    }
   };
 
   const uploadAgent = async (agentName) => {
@@ -259,8 +278,7 @@ export default function Edit() {
           </Tippy>
           <Tippy content="Run" placement="left" animation="fade">
             <div
-              className="actionIconDiv runIcon"
-              style={{ opacity: readyToRun ? 1 : 0.5 }}
+              className="actionIconDiv runIcon opacity05"
             >
               <img src={runIcon} className="actionIcon" alt="Run" />
             </div>

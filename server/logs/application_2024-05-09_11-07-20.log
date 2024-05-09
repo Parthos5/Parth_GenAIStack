@@ -1,0 +1,6 @@
+2024-05-09 11:07:20 INFO::10520::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\openagi\__init__.py:19:<module>:Logs stored at C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\logs
+2024-05-09 11:07:22 DEBUG::10520::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\h5py\__init__.py:47:<module>:Creating converter from 7 to 5
+2024-05-09 11:07:22 DEBUG::10520::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\h5py\__init__.py:47:<module>:Creating converter from 5 to 7
+2024-05-09 11:07:22 DEBUG::10520::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\h5py\__init__.py:47:<module>:Creating converter from 7 to 5
+2024-05-09 11:07:22 DEBUG::10520::C:\Users\thosp\AppData\Roaming\Python\Python311\site-packages\h5py\__init__.py:47:<module>:Creating converter from 5 to 7
+2024-05-09 11:07:33 DEBUG::10520::C:\Python311\Lib\asyncio\proactor_events.py:629:__init__:Using proactor: IocpProactor

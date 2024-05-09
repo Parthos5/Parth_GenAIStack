@@ -7,6 +7,10 @@ from openagi.init_agent import kickOffAgents
 from openagi.llms.base import LLMBaseModel, LLMConfigModel
 from openagi.utils.yamlParse import read_yaml_config
 from openagi.tools.integrations import DuckDuckGoSearchTool
+from typing import List
+from models import Agent
+
+agent_list = []
 
 class OllamaConfigModel(LLMConfigModel):
     """Configuration model for OLLAMA."""
@@ -49,30 +53,36 @@ def onResultHGI(agentName, result, consumerAgent):
     logging.debug(f"{agentName}:TO:{consumerAgent}-> {result}")
     return result, feedback, action
 
+def run_agents(updated_pg_agents: List[Agent]) -> str:
+    global agent_list
+    # Update the global agent_list with the updated_pg_agents
+    agent_list = updated_pg_agents
+    
+    # Your logic to run the agents and generate a response
+    config = OllamaModel.load_from_yaml_config()
+    llm = OllamaModel(config=config)
+    for agent in agent_list:
+        agent.llm = llm
+    output = kickOffAgents(agent_list, [agent_list[0]], llm=llm)
+    
+    # For demonstration purposes, let's assume the response is a string
+    response = output
+    
+    # Return the response
+    return response
+
 # Example Usage:
-
-
 if __name__ == "__main__":
-    agent_list = [
-           Agent(
+    
+    example_agents = [
+        Agent(
             agentName="WRITER",
-            role="SUMMARISING EXPERT",
-            goal="summarize input into presentable points",
-            backstory="Expert in summarising the given text",
-            capability="llm_task_executor",
-            task="summarize points to present to health care professionals and general public separately on covid-19 latest trends",
-            output_consumer_agent=["EMAILER"],
+            # ... (other attributes)
         ),
         Agent(
             agentName="EMAILER",
-            role="EMAIL CREATOR",
-            goal="composes the email based on the content",
-            backstory="Good in composing precise emails",
-            capability="llm_task_executor",
-            task="composes email based on summary to doctors and general public separately into a file with subject-summary and details",
-            output_consumer_agent=["HGI"],
+            # ... (other attributes)
         ),
     ]
-    config = OllamaModel.load_from_yaml_config()
-    llm = OllamaModel(config=config)
-    kickOffAgents(agent_list, [agent_list[0]], llm=llm)
+    response = run_agents(example_agents)
+    print(response)
