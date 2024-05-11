@@ -1,6 +1,7 @@
 # Parth_GenAIStack
 
 #Video Demo: https://drive.google.com/file/d/1UpMmusUc3UlxwwDe1QKHkpGzlaW35s11/view
+
 This repository contains the code and resources for the GenAI Stack project, which aims to explore and develop applications using various generative AI models and frameworks.
 
 ## Overview
