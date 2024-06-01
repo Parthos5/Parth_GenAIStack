@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import "./Edit.css";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import Tippy from "@tippyjs/react";
@@ -19,6 +19,16 @@ import Navbar from "../../Components/Navbar/Navbar";
 import AgentForm from "../../Components/AgentForm/AgentForm";
 import { useNavigate, useParams } from "react-router-dom";
 import ChatPopup from "../../Components/ChatPopup/ChatPopup";
+import ReactFlow, {
+  Controls,
+  Background,
+  applyNodeChanges,
+  applyEdgeChanges,
+  addEdge,
+  Handle,
+  Position
+} from 'reactflow';
+import 'reactflow/dist/style.css';
 
 export default function Edit() {
   const [agents, setAgents] = useState([
@@ -71,7 +81,7 @@ export default function Edit() {
   const [modelName, setModelName] = useState("phi3");
   const [finalBuild, setFinalBuild] = useState({});
   const [stackName, setStackName] = useState("");
-  const [displayChat,setDisplayChat] = useState(false)
+  const [displayChat, setDisplayChat] = useState(false);
   const { stackId } = useParams();
   const url = "http://127.0.0.1:8000";
   const ResponsiveGridLayout = WidthProvider(Responsive);
@@ -189,7 +199,7 @@ export default function Edit() {
       const result = await response.json();
       console.log("Build successful:", result);
       setFinalBuild(result);
-      setReadyToRun(true)
+      setReadyToRun(true);
       const runIconDiv = document.querySelector(".runIcon");
       runIconDiv.classList.add("opacity1");
       runIconDiv.classList.remove("opacity05");
@@ -210,7 +220,7 @@ export default function Edit() {
       ...agentToUpload,
       stack_id: stackId,
     };
-    console.log(agentData)
+    console.log(agentData);
     try {
       const response = await fetch(`${url}/createAgent/`, {
         method: "POST",
@@ -231,11 +241,46 @@ export default function Edit() {
     }
   };
 
+  const initialNodes = [
+    {
+      id: "1",
+      data: { value:123 },
+      position: { x: 0, y: 0 },
+      type: 'agentForm',
+    },
+    {
+      id: "2",
+      data: { label: "World" },
+      position: { x: 100, y: 100 },
+    },
+  ];
+
+  const nodeTypes = { agentForm: AgentForm }
+
+  const initialEdges = [];
+
+  const [nodes, setNodes] = useState(initialNodes);
+  const [edges, setEdges] = useState(initialEdges);
+
+  const onNodesChange = useCallback(
+    (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
+    [setNodes]
+  );
+  const onEdgesChange = useCallback(
+    (changes) => setEdges((eds) => applyEdgeChanges(changes, eds)),
+    [setEdges]
+  );
+  const onConnect = useCallback(
+    (params) => setEdges((eds) => addEdge(params, eds)),
+    [setEdges],
+  );
+  
   const Playground = useMemo(
-    () => (
-      <div className="playGround">
+    () => 
+      (
+      <div className="playGround" style={{ height: '100%',width:'100%' }}>
         {" "}
-        <ResponsiveGridLayout
+        {/* <ResponsiveGridLayout
           className="layout"
           layouts={{ lg: initialLayout }}
           breakpoints={{ lg: 1200 }}
@@ -252,7 +297,6 @@ export default function Edit() {
               className="agent-container"
               data-grid={{ x: index * 2, y: 0, w: 2, h: 3 }}
             >
-              {/* <h3>{agent.name}</h3> */}
               <AgentForm
                 agentName={agent.agentName}
                 role={agent.role}
@@ -266,12 +310,26 @@ export default function Edit() {
               />
             </div>
           ))}
-        </ResponsiveGridLayout>
-        {pgAgents.length == 0 && (
+        </ResponsiveGridLayout> */}
+        <ReactFlow
+          nodes={nodes}
+          onNodesChange={onNodesChange}
+          edges={edges}
+          onEdgesChange={onEdgesChange}
+          onConnect={onConnect}
+          nodeTypes={nodeTypes}
+
+          
+          fitView
+        >
+          <Background />
+          <Controls />
+        </ReactFlow>
+        {/* {pgAgents.length == 0 && (
           <div className="dndPlaceholder">
             <img src={dndIcon} alt="" /> <p>Drag and Drop to get started</p>{" "}
           </div>
-        )}
+        )} */}
         <div className="buildRunDiv">
           <Tippy content="Build" placement="left" animation="fade">
             <div className="actionIconDiv buildIcon" onClick={handleBuild}>
@@ -281,7 +339,7 @@ export default function Edit() {
           <Tippy content="Run" placement="left" animation="fade">
             <div
               className="actionIconDiv runIcon opacity05"
-              onClick={()=>setDisplayChat(!displayAgent)}
+              onClick={() => setDisplayChat(!displayAgent)}
             >
               <img src={runIcon} className="actionIcon" alt="Run" />
             </div>
@@ -289,7 +347,7 @@ export default function Edit() {
         </div>
       </div>
     ),
-    [pgAgents]
+    [pgAgents,nodes,edges]
   );
 
   function handleAgent(name, index) {
