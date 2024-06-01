@@ -1,0 +1,282 @@
+2024-05-11 15:53:26 INFO::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\__init__.py:19:<module>:Logs stored at C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\logs
+2024-05-11 15:53:31 DEBUG::3284::C:\Python311\Lib\asyncio\proactor_events.py:629:__init__:Using proactor: IocpProactor
+2024-05-11 15:53:32 DEBUG::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\tools\utils.py:64:setGHGI:Number of HGI set to: 1
+2024-05-11 15:53:32 INFO::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\init_agent.py:92:kickOffAgents:Total number of HGI agents: 1
+2024-05-11 15:53:32 DEBUG::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\init_agent.py:41:agentInitSystem:kick-off of the program
+2024-05-11 15:53:32 DEBUG::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:19:__init__:created message broker infra with agents no 5
+2024-05-11 15:53:32 DEBUG::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:28:setGMapper:mapper object = {'name_to_index': {'WRITER': 0, 'EMAILER': 1}, 'index_to_name': {0: 'WRITER', 1: 'EMAILER'}, 'PQ_LIST': [<openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C87E13010>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C88638250>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C89A582D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C89A584D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C89A586D0>], 'COND_LIST': [<Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58980>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58A00>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58A80>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58B00>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58B80>, 0)>], 'lock': <unlocked _thread.lock object at 0x0000014C89A58C00>, 'timerPool': <openagi.queue.timer_pool.TimerList object at 0x0000014C89A58C50>}
+2024-05-11 15:53:32 INFO::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\init_agent.py:51:agentInitSystem:timer demon started
+2024-05-11 15:53:32 DEBUG::14120::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:115:run:timer thread started..................
+2024-05-11 15:53:32 DEBUG::14120::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-11 15:53:32 DEBUG::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:31:getGMapper:mapper object from get = {'name_to_index': {'WRITER': 0, 'EMAILER': 1}, 'index_to_name': {0: 'WRITER', 1: 'EMAILER'}, 'PQ_LIST': [<openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C87E13010>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C88638250>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C89A582D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C89A584D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C89A586D0>], 'COND_LIST': [<Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58980>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58A00>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58A80>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58B00>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58B80>, 0)>], 'lock': <unlocked _thread.lock object at 0x0000014C89A58C00>, 'timerPool': <openagi.queue.timer_pool.TimerList object at 0x0000014C89A58C50>}
+2024-05-11 15:53:32 DEBUG::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of WRITER is 0
+2024-05-11 15:53:32 DEBUG::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:43:get_COND_by_name:index of WRITER is 0
+2024-05-11 15:53:32 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:312:run:I am agent WRITER
+2024-05-11 15:53:32 DEBUG::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:350:start_agent:Agent: WRITER LLM: <test2.OllamaModel object at 0x0000014C87EF5390>
+2024-05-11 15:53:32 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 15:53:32 DEBUG::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of EMAILER is 1
+2024-05-11 15:53:32 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 15:53:32 DEBUG::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:43:get_COND_by_name:index of EMAILER is 1
+2024-05-11 15:53:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:312:run:I am agent EMAILER
+2024-05-11 15:53:32 DEBUG::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:350:start_agent:Agent: EMAILER LLM: <test2.OllamaModel object at 0x0000014C87EF5390>
+2024-05-11 15:53:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 15:53:32 DEBUG::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:31:getGMapper:mapper object from get = {'name_to_index': {'WRITER': 0, 'EMAILER': 1}, 'index_to_name': {0: 'WRITER', 1: 'EMAILER'}, 'PQ_LIST': [<openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C87E13010>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C88638250>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C89A582D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C89A584D0>, <openagi.queue.pq.MultiThreadPriorityQueue object at 0x0000014C89A586D0>], 'COND_LIST': [<Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58980>, 1)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58A00>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58A80>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58B00>, 0)>, <Condition(<unlocked _thread.RLock object owner=0 count=0 at 0x0000014C89A58B80>, 0)>], 'lock': <unlocked _thread.lock object at 0x0000014C89A58C00>, 'timerPool': <openagi.queue.timer_pool.TimerList object at 0x0000014C89A58C50>}
+2024-05-11 15:53:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 15:53:32 DEBUG::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\pq.py:28:__init__:message contents:0:0::MessageType.PROF_AGENT_TRIGGER ::profAgent ->WRITER :HGI sending trigger message to start the execution
+2024-05-11 15:53:32 DEBUG::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of WRITER is 0
+2024-05-11 15:53:37 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:319:run:agent WRITER retrieved message: {'priority': 0, 'perception_type': 0, 'message_type': <MessageType.PROF_AGENT_TRIGGER: 2>, 'srcAgent': 'profAgent', 'dstAgent': 'WRITER', 'body': 'HGI sending trigger message to start the execution'}
+2024-05-11 15:53:37 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:321:run:appended received message to list for aggregation
+2024-05-11 15:53:37 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:41:add_timer:current time: 1715423017.1465013 : internal 20000
+2024-05-11 15:53:37 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:46:add_timer:first timer inserted....
+2024-05-11 15:53:37 DEBUG::14120::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 20000.0
+2024-05-11 15:53:37 INFO::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\utils\llmTasks.py:280:handleLLMTask:Running handleLLMTask:: <test2.OllamaModel object at 0x0000014C87EF5390>
+2024-05-11 15:53:37 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:244:_new_conn:Starting new HTTP connection (1): localhost:11434
+2024-05-11 15:53:40 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:549:_make_request:http://localhost:11434 "POST /api/generate/ HTTP/1.1" 307 0
+2024-05-11 15:53:41 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:549:_make_request:http://localhost:11434 "POST /api/generate HTTP/1.1" 200 None
+2024-05-11 15:55:12 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 15:55:12 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 15:56:52 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 15:56:52 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 15:58:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 15:58:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 15:58:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:276:execute:response of agent WRITER is To Health Care Professionals:
+
+1. Ongoing monitoring of COVID-19 variant spread: Continuously track emerging variants, including Delta and Alpha strains, with a focus on their transmissibility, vaccine efficacy against new strains, and potential impacts on immune escape.
+2. Vaccination progress: Review current vaccination rates globally and among different demographics, emphasizing the importance of increasing coverage to achieve herd immunity.
+3. Treatment updates: Stay updated on advancements in antiviral treatments, monoclonal antibodies, and other therapeutic options for COVID-19 patients.
+4. Impacts on healthcare systems: Assess the burden of new cases and hospitalizations to better prepare hospitals and allocate resources effectively.
+5. Public health measures: Evaluate effectiveness of current preventive strategies, such as mask mandates, social distancing, travel restrictions, and vaccination campaigns in reducing transmission rates.
+6. Pandemic response coordination: Collaborate with international organizations like WHO to share best practices and coordinate efforts against COVID-19 on a global scale.
+
+To General Public:
+
+1. Importance of vaccination: Highlight the significance of receiving both doses of the COVID-19 vaccine for optimal protection against the virus, including emerging strains.
+2. Latest trends in variant spread: Explain how new variants may affect transmission rates and emphasize staying informed about updates on COVID-19 research to make informed decisions regarding personal safety measures.
+3. Preventive strategies: Reinforce key practices like wearing masks, maintaining physical distance, frequent handwashing, and avoiding crowded indoor settings for reducing the risk of transmission.
+4. Recognizing symptoms: Remind individuals about common COVID-19 symptoms (fever, cough, loss of taste or smell) to identify potential infection quickly and seek medical attention if needed.
+5. Importance of staying updated: Encourage following trusted sources for accurate information on COVID-1 Written Summary - Latest Trends in Covid-19 Pandemic
+
+As an expert summarizing the given text, I present to healthcare professionals and the general public these key points regarding the latest trends in the COVID-19 pandemic:
+
+To Health Care Professionals:
+
+1. Variant monitoring: Continue surveillance of emerging variants like Delta and Alpha, assessing their impact on transmissibility, vaccine efficacy, and potential immune escape.
+2. Vaccination progress: Track global vaccination rates to address disparities and prioritize high-risk groups for achieving herd immunity effectively.
+3. Treatment advancements: Stay updated on antiviral therapies, monoclonal antibodies, and other novel treatment options to optimize patient care.
+4. Healthcare system strain: Monitor hospitalization rates and intensive care needs to ensure adequate resources allocation while preventing healthcare overload.
+5. Public health measures evaluation: Assess the effectiveness of interventions such as mask-wearing, social distancing, travel restrictions, and vaccination campaigns in reducing virus transmission.
+6. Global collaboration: Engage with global health organizations for knowledge exchange and coordinated pandemic response efforts.
+
+To General Public:
+
+1. Vaccine importance: Stress the critical role of completing both doses to achieve optimal protection against COVID-19, including new variants.
+2. Variant trends awareness: Stay informed about variant developments and their implications on transmission rates while maintaining personal safety measures.
+3. Preventive actions: Continue practicing mask usage, social distancing, hand hygiene, and avoiding crowded places to minimize virus spread.
+4. Recognizing symptoms: Be vigilant about common COVID-19 signs (fever, cough, anosmia) for early detection and timely medical consultation if necessary.
+5. Reliable information sources: Seek updates from reputable health authorities to make informed decisions during the ongoing pandemic.
+2024-05-11 15:58:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:88:remove_timerWithNames:remove timer is called for WRITER LLM_TIMER
+2024-05-11 15:58:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:94:remove_timerWithNames:timer found for agent WRITER timer name LLM_TIMER  for removal
+2024-05-11 15:58:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:307:execute:WRITER..to.. EMAILER content:: To Health Care Professionals:
+
+1. Ongoing monitoring of COVID-19 variant spread: Continuously track emerging variants, including Delta and Alpha strains, with a focus on their transmissibility, vaccine efficacy against new strains, and potential impacts on immune escape.
+2. Vaccination progress: Review current vaccination rates globally and among different demographics, emphasizing the importance of increasing coverage to achieve herd immunity.
+3. Treatment updates: Stay updated on advancements in antiviral treatments, monoclonal antibodies, and other therapeutic options for COVID-19 patients.
+4. Impacts on healthcare systems: Assess the burden of new cases and hospitalizations to better prepare hospitals and allocate resources effectively.
+5. Public health measures: Evaluate effectiveness of current preventive strategies, such as mask mandates, social distancing, travel restrictions, and vaccination campaigns in reducing transmission rates.
+6. Pandemic response coordination: Collaborate with international organizations like WHO to share best practices and coordinate efforts against COVID-19 on a global scale.
+
+To General Public:
+
+1. Importance of vaccination: Highlight the significance of receiving both doses of the COVID-19 vaccine for optimal protection against the virus, including emerging strains.
+2. Latest trends in variant spread: Explain how new variants may affect transmission rates and emphasize staying informed about updates on COVID-19 research to make informed decisions regarding personal safety measures.
+3. Preventive strategies: Reinforce key practices like wearing masks, maintaining physical distance, frequent handwashing, and avoiding crowded indoor settings for reducing the risk of transmission.
+4. Recognizing symptoms: Remind individuals about common COVID-19 symptoms (fever, cough, loss of taste or smell) to identify potential infection quickly and seek medical attention if needed.
+5. Importance of staying updated: Encourage following trusted sources for accurate information on COVID-1 Written Summary - Latest Trends in Covid-19 Pandemic
+
+As an expert summarizing the given text, I present to healthcare professionals and the general public these key points regarding the latest trends in the COVID-19 pandemic:
+
+To Health Care Professionals:
+
+1. Variant monitoring: Continue surveillance of emerging variants like Delta and Alpha, assessing their impact on transmissibility, vaccine efficacy, and potential immune escape.
+2. Vaccination progress: Track global vaccination rates to address disparities and prioritize high-risk groups for achieving herd immunity effectively.
+3. Treatment advancements: Stay updated on antiviral therapies, monoclonal antibodies, and other novel treatment options to optimize patient care.
+4. Healthcare system strain: Monitor hospitalization rates and intensive care needs to ensure adequate resources allocation while preventing healthcare overload.
+5. Public health measures evaluation: Assess the effectiveness of interventions such as mask-wearing, social distancing, travel restrictions, and vaccination campaigns in reducing virus transmission.
+6. Global collaboration: Engage with global health organizations for knowledge exchange and coordinated pandemic response efforts.
+
+To General Public:
+
+1. Vaccine importance: Stress the critical role of completing both doses to achieve optimal protection against COVID-19, including new variants.
+2. Variant trends awareness: Stay informed about variant developments and their implications on transmission rates while maintaining personal safety measures.
+3. Preventive actions: Continue practicing mask usage, social distancing, hand hygiene, and avoiding crowded places to minimize virus spread.
+4. Recognizing symptoms: Be vigilant about common COVID-19 signs (fever, cough, anosmia) for early detection and timely medical consultation if necessary.
+5. Reliable information sources: Seek updates from reputable health authorities to make informed decisions during the ongoing pandemic.
+2024-05-11 15:58:49 DEBUG::14120::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-11 15:58:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\pq.py:28:__init__:message contents:0:0::MessageType.AGENT_MSG ::WRITER ->EMAILER :To Health Care Professionals:
+
+1. Ongoing monitoring of COVID-19 variant spread: Continuously track emerging variants, including Delta and Alpha strains, with a focus on their transmissibility, vaccine efficacy against new strains, and potential impacts on immune escape.
+2. Vaccination progress: Review current vaccination rates globally and among different demographics, emphasizing the importance of increasing coverage to achieve herd immunity.
+3. Treatment updates: Stay updated on advancements in antiviral treatments, monoclonal antibodies, and other therapeutic options for COVID-19 patients.
+4. Impacts on healthcare systems: Assess the burden of new cases and hospitalizations to better prepare hospitals and allocate resources effectively.
+5. Public health measures: Evaluate effectiveness of current preventive strategies, such as mask mandates, social distancing, travel restrictions, and vaccination campaigns in reducing transmission rates.
+6. Pandemic response coordination: Collaborate with international organizations like WHO to share best practices and coordinate efforts against COVID-19 on a global scale.
+
+To General Public:
+
+1. Importance of vaccination: Highlight the significance of receiving both doses of the COVID-19 vaccine for optimal protection against the virus, including emerging strains.
+2. Latest trends in variant spread: Explain how new variants may affect transmission rates and emphasize staying informed about updates on COVID-19 research to make informed decisions regarding personal safety measures.
+3. Preventive strategies: Reinforce key practices like wearing masks, maintaining physical distance, frequent handwashing, and avoiding crowded indoor settings for reducing the risk of transmission.
+4. Recognizing symptoms: Remind individuals about common COVID-19 symptoms (fever, cough, loss of taste or smell) to identify potential infection quickly and seek medical attention if needed.
+5. Importance of staying updated: Encourage following trusted sources for accurate information on COVID-1 Written Summary - Latest Trends in Covid-19 Pandemic
+
+As an expert summarizing the given text, I present to healthcare professionals and the general public these key points regarding the latest trends in the COVID-19 pandemic:
+
+To Health Care Professionals:
+
+1. Variant monitoring: Continue surveillance of emerging variants like Delta and Alpha, assessing their impact on transmissibility, vaccine efficacy, and potential immune escape.
+2. Vaccination progress: Track global vaccination rates to address disparities and prioritize high-risk groups for achieving herd immunity effectively.
+3. Treatment advancements: Stay updated on antiviral therapies, monoclonal antibodies, and other novel treatment options to optimize patient care.
+4. Healthcare system strain: Monitor hospitalization rates and intensive care needs to ensure adequate resources allocation while preventing healthcare overload.
+5. Public health measures evaluation: Assess the effectiveness of interventions such as mask-wearing, social distancing, travel restrictions, and vaccination campaigns in reducing virus transmission.
+6. Global collaboration: Engage with global health organizations for knowledge exchange and coordinated pandemic response efforts.
+
+To General Public:
+
+1. Vaccine importance: Stress the critical role of completing both doses to achieve optimal protection against COVID-19, including new variants.
+2. Variant trends awareness: Stay informed about variant developments and their implications on transmission rates while maintaining personal safety measures.
+3. Preventive actions: Continue practicing mask usage, social distancing, hand hygiene, and avoiding crowded places to minimize virus spread.
+4. Recognizing symptoms: Be vigilant about common COVID-19 signs (fever, cough, anosmia) for early detection and timely medical consultation if necessary.
+5. Reliable information sources: Seek updates from reputable health authorities to make informed decisions during the ongoing pandemic.
+2024-05-11 15:58:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\message_broker.py:38:get_PQ_by_name:index of EMAILER is 1
+2024-05-11 15:58:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 15:58:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 15:58:49 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:319:run:agent EMAILER retrieved message: {'priority': 0, 'perception_type': 0, 'message_type': <MessageType.AGENT_MSG: 5>, 'srcAgent': 'WRITER', 'dstAgent': 'EMAILER', 'body': 'To Health Care Professionals:\n\n1. Ongoing monitoring of COVID-19 variant spread: Continuously track emerging variants, including Delta and Alpha strains, with a focus on their transmissibility, vaccine efficacy against new strains, and potential impacts on immune escape.\n2. Vaccination progress: Review current vaccination rates globally and among different demographics, emphasizing the importance of increasing coverage to achieve herd immunity.\n3. Treatment updates: Stay updated on advancements in antiviral treatments, monoclonal antibodies, and other therapeutic options for COVID-19 patients.\n4. Impacts on healthcare systems: Assess the burden of new cases and hospitalizations to better prepare hospitals and allocate resources effectively.\n5. Public health measures: Evaluate effectiveness of current preventive strategies, such as mask mandates, social distancing, travel restrictions, and vaccination campaigns in reducing transmission rates.\n6. Pandemic response coordination: Collaborate with international organizations like WHO to share best practices and coordinate efforts against COVID-19 on a global scale.\n\nTo General Public:\n\n1. Importance of vaccination: Highlight the significance of receiving both doses of the COVID-19 vaccine for optimal protection against the virus, including emerging strains.\n2. Latest trends in variant spread: Explain how new variants may affect transmission rates and emphasize staying informed about updates on COVID-19 research to make informed decisions regarding personal safety measures.\n3. Preventive strategies: Reinforce key practices like wearing masks, maintaining physical distance, frequent handwashing, and avoiding crowded indoor settings for reducing the risk of transmission.\n4. Recognizing symptoms: Remind individuals about common COVID-19 symptoms (fever, cough, loss of taste or smell) to identify potential infection quickly and seek medical attention if needed.\n5. Importance of staying updated: Encourage following trusted sources for accurate information on COVID-1 Written Summary - Latest Trends in Covid-19 Pandemic\n\nAs an expert summarizing the given text, I present to healthcare professionals and the general public these key points regarding the latest trends in the COVID-19 pandemic:\n\nTo Health Care Professionals:\n\n1. Variant monitoring: Continue surveillance of emerging variants like Delta and Alpha, assessing their impact on transmissibility, vaccine efficacy, and potential immune escape.\n2. Vaccination progress: Track global vaccination rates to address disparities and prioritize high-risk groups for achieving herd immunity effectively.\n3. Treatment advancements: Stay updated on antiviral therapies, monoclonal antibodies, and other novel treatment options to optimize patient care.\n4. Healthcare system strain: Monitor hospitalization rates and intensive care needs to ensure adequate resources allocation while preventing healthcare overload.\n5. Public health measures evaluation: Assess the effectiveness of interventions such as mask-wearing, social distancing, travel restrictions, and vaccination campaigns in reducing virus transmission.\n6. Global collaboration: Engage with global health organizations for knowledge exchange and coordinated pandemic response efforts.\n\nTo General Public:\n\n1. Vaccine importance: Stress the critical role of completing both doses to achieve optimal protection against COVID-19, including new variants.\n2. Variant trends awareness: Stay informed about variant developments and their implications on transmission rates while maintaining personal safety measures.\n3. Preventive actions: Continue practicing mask usage, social distancing, hand hygiene, and avoiding crowded places to minimize virus spread.\n4. Recognizing symptoms: Be vigilant about common COVID-19 signs (fever, cough, anosmia) for early detection and timely medical consultation if necessary.\n5. Reliable information sources: Seek updates from reputable health authorities to make informed decisions during the ongoing pandemic.'}
+2024-05-11 15:58:49 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:321:run:appended received message to list for aggregation
+2024-05-11 15:58:49 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:41:add_timer:current time: 1715423329.8161755 : internal 20000
+2024-05-11 15:58:49 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:46:add_timer:first timer inserted....
+2024-05-11 15:58:49 DEBUG::14120::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 20000.0
+2024-05-11 15:58:49 INFO::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\utils\llmTasks.py:280:handleLLMTask:Running handleLLMTask:: <test2.OllamaModel object at 0x0000014C87EF5390>
+2024-05-11 15:58:49 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:244:_new_conn:Starting new HTTP connection (1): localhost:11434
+2024-05-11 15:58:51 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:549:_make_request:http://localhost:11434 "POST /api/generate/ HTTP/1.1" 307 0
+2024-05-11 15:59:15 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\urllib3\connectionpool.py:549:_make_request:http://localhost:11434 "POST /api/generate HTTP/1.1" 200 None
+2024-05-11 16:00:29 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:00:29 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:02:09 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:02:09 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:03:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:03:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:04:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:276:execute:response of agent EMAILER is Subject: COVID-19 Update - Latest Trends & Precautions
+
+Dear Healthcare Professionals,
+
+We would like to bring your attention to several critical aspects related to the ongoing COVID-19 pandemic:
+
+1. Monitoring Variants: Continuous tracking of emerging strains such as Delta and Alpha is crucial for understanding their transmissibility, vaccine efficacy, and potential immune escape risks. 
+2. Vaccination Rates: It's essential to review global and demographic-specific vaccination rates while prioritizing high-risk groups to achieve herd immunity efficiently.
+3. Treatment Updates: Stay abreast of the latest advancements in antiviral therapies, monoclonal antibodies, and other treatments for COVID-19 patients. 
+4. Hospitalization Impacts: Assess new cases and hospitalizations to prepare hospitals effectively and allocate resources where they are most needed.
+5. Preventive Measures: Evaluate the effectiveness of existing prevention strategies, such as mask mandates, social distancing, travel restrictions, and vaccination campaigns in reducing transmission rates.
+6. Global Collaboration: Engage with international organizations like WHO to share best practices and coordinate a comprehensive global response against COVID-19.
+
+To Our Dear Community Members,
+
+We'd like to emphasize the importance of vaccination, particularly completing both doses for maximum protection against COVID-19, including new variants. Additionally, staying informed about variant trends and maintaining personal safety measures (wearing masks, social distancing, hand hygiene) will help curb virus transmission.
+
+Recognizing symptoms like fever, cough, and loss of taste or smell can facilitate early detection for timely medical intervention if needed. Lastly, always refer to reliable sources for the latest information during these challenging times.
+
+Stay safe!
+
+Sincerely,
+[Your Name]
+2024-05-11 16:04:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:88:remove_timerWithNames:remove timer is called for EMAILER LLM_TIMER
+2024-05-11 16:04:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:94:remove_timerWithNames:timer found for agent EMAILER timer name LLM_TIMER  for removal
+2024-05-11 16:04:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:140:sendMessagetoHGI:final message to HGI= Subject: COVID-19 Update - Latest Trends & Precautions
+
+Dear Healthcare Professionals,
+
+We would like to bring your attention to several critical aspects related to the ongoing COVID-19 pandemic:
+
+1. Monitoring Variants: Continuous tracking of emerging strains such as Delta and Alpha is crucial for understanding their transmissibility, vaccine efficacy, and potential immune escape risks. 
+2. Vaccination Rates: It's essential to review global and demographic-specific vaccination rates while prioritizing high-risk groups to achieve herd immunity efficiently.
+3. Treatment Updates: Stay abreast of the latest advancements in antiviral therapies, monoclonal antibodies, and other treatments for COVID-19 patients. 
+4. Hospitalization Impacts: Assess new cases and hospitalizations to prepare hospitals effectively and allocate resources where they are most needed.
+5. Preventive Measures: Evaluate the effectiveness of existing prevention strategies, such as mask mandates, social distancing, travel restrictions, and vaccination campaigns in reducing transmission rates.
+6. Global Collaboration: Engage with international organizations like WHO to share best practices and coordinate a comprehensive global response against COVID-19.
+
+To Our Dear Community Members,
+
+We'd like to emphasize the importance of vaccination, particularly completing both doses for maximum protection against COVID-19, including new variants. Additionally, staying informed about variant trends and maintaining personal safety measures (wearing masks, social distancing, hand hygiene) will help curb virus transmission.
+
+Recognizing symptoms like fever, cough, and loss of taste or smell can facilitate early detection for timely medical intervention if needed. Lastly, always refer to reliable sources for the latest information during these challenging times.
+
+Stay safe!
+
+Sincerely,
+[Your Name]
+2024-05-11 16:04:32 DEBUG::14120::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-11 16:04:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\tools\utils.py:70:isLastHGI:Number of HGI reduced to: 0
+2024-05-11 16:04:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:303:execute:before wake for exit..........
+2024-05-11 16:04:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:04:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:04:32 INFO::3284::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\init_agent.py:64:triggerAgent:final exit
+2024-05-11 16:05:29 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:05:29 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:06:12 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:06:12 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:07:09 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:07:09 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:07:52 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:07:52 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:08:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:08:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:09:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:09:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:10:29 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:10:29 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:11:12 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:11:12 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:12:09 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:12:09 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:12:52 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:12:52 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:13:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:13:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:14:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:14:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:15:29 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:15:29 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:16:12 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:16:12 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:17:09 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:17:09 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:17:52 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:17:52 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:18:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:18:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:19:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:19:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:20:29 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:20:29 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:21:12 DEBUG::14120::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\queue\timer_pool.py:123:run:time to sleep: 1000
+2024-05-11 16:21:12 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:21:12 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:22:09 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:22:09 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:22:52 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:22:52 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:23:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:23:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:24:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:24:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:25:29 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:25:29 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:26:12 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:26:12 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:27:09 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:27:09 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:27:52 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:27:52 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1
+2024-05-11 16:28:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:WRITER agent found no messages from PQ .. going to wait.
+2024-05-11 16:28:49 DEBUG::16544::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of WRITER is 0
+2024-05-11 16:29:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:339:run:EMAILER agent found no messages from PQ .. going to wait.
+2024-05-11 16:29:32 DEBUG::18684::C:\Users\thosp\OneDrive\Documents\GitHub\Parth_GenAIStack\server\venv\Lib\site-packages\openagi\agent.py:43:waitonConditionAgent:index of EMAILER is 1

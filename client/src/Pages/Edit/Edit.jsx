@@ -210,7 +210,7 @@ export default function Edit() {
       ...agentToUpload,
       stack_id: stackId,
     };
-
+    console.log(agentData)
     try {
       const response = await fetch(`${url}/createAgent/`, {
         method: "POST",

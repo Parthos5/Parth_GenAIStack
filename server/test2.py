@@ -9,7 +9,7 @@ from openagi.utils.yamlParse import read_yaml_config
 from openagi.tools.integrations import DuckDuckGoSearchTool
 from typing import List
 from models import Agent as webAgent
-
+global final_result
 agent_list = []
 mainResp = ""
 
@@ -53,6 +53,7 @@ def onResultHGI(agentName, result, consumerAgent):
     action = "None"
     mainResp = result
     logging.debug(f"{agentName}:TO:{consumerAgent}-> {result}")
+    final_result = result
     return result, feedback, action,mainResp
 
 def run_agents(updated_pg_agents: List[webAgent]) -> str:
@@ -76,12 +77,13 @@ def run_agents(updated_pg_agents: List[webAgent]) -> str:
         )
         # agent.llm = llm  # Set the llm attribute to the loaded LLM model
         final_agents.append(agent)
+    print(final_agents)
     kickOffAgents(final_agents, [final_agents[0]], llm=llm)
     # For demonstration purposes, let's assume the response is a string
     # response = output
     
     # Return the response
-    return mainResp
+    return final_result
 
 # Example Usage:
 if __name__ == "__main__":
