@@ -18,6 +18,7 @@ import runIcon from "../../assets/runIcon.png";
 import Navbar from "../../Components/Navbar/Navbar";
 import AgentForm from "../../Components/AgentForm/AgentForm";
 import { useNavigate, useParams } from "react-router-dom";
+import AddStackBtn from "../../Components/AddStackBtn/AddStackBtn";
 import ChatPopup from "../../Components/ChatPopup/ChatPopup";
 import ReactFlow, {
   Controls,
@@ -26,9 +27,9 @@ import ReactFlow, {
   applyEdgeChanges,
   addEdge,
   Handle,
-  Position
-} from 'reactflow';
-import 'reactflow/dist/style.css';
+  Position,
+} from "reactflow";
+import "reactflow/dist/style.css";
 
 export default function Edit() {
   const [agents, setAgents] = useState([
@@ -72,6 +73,8 @@ export default function Edit() {
       name: "phi3",
     },
   ]);
+  const nodeTypes = useMemo(() => ({ agentForm: AgentForm }), []);
+
   const [displayAgent, setDisplayAgent] = useState(false);
   const [displayTools, setDisplayTools] = useState(false);
   const [displayLLMs, setDisplayLLMs] = useState(false);
@@ -107,7 +110,7 @@ export default function Edit() {
         }
         const agentsData = await agentsResponse.json();
         console.log(agentsData);
-        setAgents(agentsData);
+        // setAgents(agentsData);
       } catch (error) {
         console.error("Error fetching stack data:", error);
       }
@@ -155,6 +158,7 @@ export default function Edit() {
   }
 
   const [pgAgents, setPgAgents] = useState([]);
+  const [toolsAgents, setToolsAgents] = useState([]);
 
   function handleDisplay(prop) {
     if (prop === "agents") {
@@ -243,24 +247,40 @@ export default function Edit() {
 
   const initialNodes = [
     {
-      id: "1",
-      data: { value:123 },
+      id: "node-1",
+      data: { value: 123 },
       position: { x: 0, y: 0 },
-      type: 'agentForm',
+      type: "agentForm",
+      // targetPosition:'bottom'
     },
     {
-      id: "2",
+      id: "node-2",
       data: { label: "World" },
-      position: { x: 100, y: 100 },
+      position: { x: 400, y: 100 },
+      type: "output",
+      targetPosition: "top",
     },
   ];
 
-  const nodeTypes = { agentForm: AgentForm }
+  const initialEdges = [
+    // { id: "edge-1", source: "node-1", sourceHandle: "a", target: "node-2" },
+    // { id: '2', source: '1', sourceHandle: 'b', target: '3' },
+  ];
 
-  const initialEdges = [];
-
-  const [nodes, setNodes] = useState(initialNodes);
+  const [nodes, setNodes] = useState(pgAgents);
   const [edges, setEdges] = useState(initialEdges);
+
+  const updateNodes = useMemo(() => setNodes(pgAgents), [pgAgents]);
+  // const updateNodes =
+
+  // const updateNodes = useMemo(() => {
+  //   // if (pgAgents.length === 0) return;
+
+  //   const last = pgAgents.length - 1;
+  //   const newNode = pgAgents[last];
+
+  //   setNodes((prevNodes) => [...prevNodes, newNode]);
+  // }, [pgAgents]);
 
   const onNodesChange = useCallback(
     (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
@@ -272,13 +292,12 @@ export default function Edit() {
   );
   const onConnect = useCallback(
     (params) => setEdges((eds) => addEdge(params, eds)),
-    [setEdges],
+    [setEdges]
   );
-  
+
   const Playground = useMemo(
-    () => 
-      (
-      <div className="playGround" style={{ height: '100%',width:'100%' }}>
+    () => (
+      <div className="playGround" style={{ height: "100%", width: "100%" }}>
         {" "}
         {/* <ResponsiveGridLayout
           className="layout"
@@ -318,8 +337,6 @@ export default function Edit() {
           onEdgesChange={onEdgesChange}
           onConnect={onConnect}
           nodeTypes={nodeTypes}
-
-          
           fitView
         >
           <Background />
@@ -347,7 +364,7 @@ export default function Edit() {
         </div>
       </div>
     ),
-    [pgAgents,nodes,edges]
+    [pgAgents, nodes, edges]
   );
 
   function handleAgent(name, index) {
@@ -366,6 +383,12 @@ export default function Edit() {
           task: "",
           tools_list: [],
           add: true,
+
+          // fields for reactflow (playground)
+          id: `agent-node-${index}`,
+          data: { value: 123 },
+          position: { x: 0, y: 0 },
+          type: "agentForm",
         },
       ]);
     } else {
@@ -378,6 +401,23 @@ export default function Edit() {
       );
       setPgAgents(filteredPgAgents);
     }
+  }
+
+  function handleTools(name) {
+    const updatedToolsAgents = [...pgAgents];
+    let x_pos = 100*pgAgents.length;
+    let newToolAgent = {
+      name: `${name}`,
+      kind: "tool",
+
+      id: `tool-node-${pgAgents.length-1}`,
+      data: { label: `${name}` },
+      position: { x: `${x_pos}`, y: 0 },
+      type: "output",
+    };
+    updatedToolsAgents.push(newToolAgent);
+    setPgAgents(updatedToolsAgents);
+    console.log(pgAgents);
   }
 
   return (
@@ -453,7 +493,10 @@ export default function Edit() {
               {displayTools &&
                 tools.map((tool, index) => (
                   <div key={index} className="componentOptions">
-                    <div className="Option">
+                    <div
+                      className="Option"
+                      onClick={() => handleTools(tool.name)}
+                    >
                       <p>{tool.name}</p>
                       <img
                         className="hamburgerIcon"

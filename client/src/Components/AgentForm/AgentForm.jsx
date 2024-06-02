@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./AgentForm.css";
 import agentsIcon from "../../assets/agentsIcon.png";
 import { useParams } from "react-router-dom";
+import { Handle, Position } from "reactflow";
 
 export default function AgentForm(props) {
   const {
@@ -25,10 +26,11 @@ export default function AgentForm(props) {
   const [localCapabilities, setLocalCapabilities] = useState(capabilities);
   const [localTask, setLocalTask] = useState(task);
   const [localToolsList, setLocalToolsList] = useState(tools_list);
+  const handleStyle = { left: 10 };
 
   // Function to handle key down events
   const handleKeyDown = (e, field, value) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       onChange(field, value);
     }
   };
@@ -39,23 +41,25 @@ export default function AgentForm(props) {
   };
 
   return (
-    <div className="agent-container">
-      <div className="componentHead" style={{ marginBottom: "20px" }}>
-        <img src={agentsIcon} alt="" />
-        Agent - {localAgentName}
-      </div>
-      <div className="agent-form">
-        <div className="agent-form-group">
-          <label htmlFor="agentName">Agent Name</label>
-          <input
-            type="text"
-            id="agentName"
-            value={localAgentName}
-            onChange={handleInputChange(setLocalAgentName)}
-            onKeyDown={(e) => handleKeyDown(e, "agentName", localAgentName)}
-          />
+    <>
+      <Handle type="target" position={Position.Top} />
+      <div className="agent-container">
+        <div className="componentHead" style={{ marginBottom: "20px" }}>
+          <img src={agentsIcon} alt="" />
+          Agent - {localAgentName}
         </div>
-        <div className="agent-form-group">
+        <div className="agent-form">
+          <div className="agent-form-group">
+            <label htmlFor="agentName">Agent Name</label>
+            <input
+              type="text"
+              id="agentName"
+              value={localAgentName}
+              onChange={handleInputChange(setLocalAgentName)}
+              onKeyDown={(e) => handleKeyDown(e, "agentName", localAgentName)}
+            />
+          </div>
+          <div className="agent-form-group">
           <label htmlFor="agentRole">Role</label>
           <input
             type="text"
@@ -128,7 +132,15 @@ export default function AgentForm(props) {
         >
           Save
         </button>
+        </div>
+        <Handle type="source" position={Position.Bottom} id="a" />
+      <Handle
+        type="source"
+        position={Position.Bottom}
+        id="b"
+        style={handleStyle}
+      />
       </div>
-    </div>
+    </>
   );
 }
