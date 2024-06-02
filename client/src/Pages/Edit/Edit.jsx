@@ -26,10 +26,12 @@ import ReactFlow, {
   applyNodeChanges,
   applyEdgeChanges,
   addEdge,
+  MiniMap,
   Handle,
   Position,
 } from "reactflow";
 import "reactflow/dist/style.css";
+import ModelForm from "../../Components/ModelForm/ModelForm";
 
 export default function Edit() {
   const [agents, setAgents] = useState([
@@ -73,7 +75,7 @@ export default function Edit() {
       name: "phi3",
     },
   ]);
-  const nodeTypes = useMemo(() => ({ agentForm: AgentForm }), []);
+  const nodeTypes = useMemo(() => ({ agentForm: AgentForm,modelForm:ModelForm }), []);
 
   const [displayAgent, setDisplayAgent] = useState(false);
   const [displayTools, setDisplayTools] = useState(false);
@@ -341,6 +343,7 @@ export default function Edit() {
         >
           <Background />
           <Controls />
+          <MiniMap nodeStrokeWidth={3} />
         </ReactFlow>
         {/* {pgAgents.length == 0 && (
           <div className="dndPlaceholder">
@@ -418,6 +421,19 @@ export default function Edit() {
     updatedToolsAgents.push(newToolAgent);
     setPgAgents(updatedToolsAgents);
     console.log(pgAgents);
+  }
+
+  function handleModel(){
+    setSelectedModel(!selectedModel)
+    const updatedArr = [...pgAgents];
+    let newModelObj = {
+      id: `model-node-${pgAgents.length-1}`,
+      data: { value:123 },
+      position: { x: 0, y: 0 },
+      type: "modelForm",
+    }
+    updatedArr.push(newModelObj);
+    setPgAgents(updatedArr)
   }
 
   return (
@@ -527,7 +543,7 @@ export default function Edit() {
                   <div
                     key={index}
                     className="componentOptions"
-                    onClick={() => setSelectedModel(!selectedModel)}
+                    onClick={handleModel}
                   >
                     <div
                       className={

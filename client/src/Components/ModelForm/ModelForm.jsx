@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AgentForm.css";
+import "../AgentForm/AgentForm.css";
 import agentsIcon from "../../assets/agentsIcon.png";
 import { useParams } from "react-router-dom";
 import { Handle, Position } from "reactflow";
@@ -46,7 +46,7 @@ export default function ModelForm(props) {
       <div className="agent-container">
         <div className="componentHead" style={{ marginBottom: "20px" }}>
           <img src={agentsIcon} alt="" />
-          Model Name - Phi3 {localAgentName}
+          Model Name - Phi3
         </div>
         <div className="agent-form">
           <div className="agent-form-group">
@@ -91,13 +91,13 @@ export default function ModelForm(props) {
           Save
         </button>
         </div>
-        <Handle type="source" position={Position.Bottom} id="a" />
-      <Handle
+        {/* <Handle type="source" position={Position.Bottom} id="a" /> */}
+      {/* <Handle
         type="source"
         position={Position.Bottom}
         id="b"
         style={handleStyle}
-      />
+      /> */}
       </div>
     </>
   );
