@@ -1,5 +1,5 @@
 import requests
-from typing import Union,List,Annotated
+from typing import Union,List,Annotated,Optional
 from fastapi import FastAPI, HTTPException, Depends,Security
 from fastapi.security import OAuth2PasswordBearer
 import models
@@ -62,21 +62,21 @@ class StackModel(BaseModel):
     
 class AgentCreate(BaseModel):
     agentName: str
-    role: str
-    goal: str
-    backstory: str
-    task: str
-    capability: str
+    role: Optional[str] = None
+    goal: Optional[str] = None
+    backstory: Optional[str] = None
+    task: Optional[str] = None
+    capability: Optional[str] = None
     stack_id: int
     
 class AgentRead(BaseModel):
     id: int
     agentName: str
-    role: str
-    goal: str
-    backstory: str
-    task: str
-    capability: str
+    role: Optional[str] = None
+    goal: Optional[str] = None
+    backstory: Optional[str] = None
+    task: Optional[str] = None
+    capability: Optional[str] = None
     stack_id: int
 
     class Config:

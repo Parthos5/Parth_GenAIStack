@@ -75,7 +75,10 @@ export default function Edit() {
       name: "phi3",
     },
   ]);
-  const nodeTypes = useMemo(() => ({ agentForm: AgentForm,modelForm:ModelForm }), []);
+  const nodeTypes = useMemo(
+    () => ({ agentForm: AgentForm, modelForm: ModelForm }),
+    []
+  );
 
   const [displayAgent, setDisplayAgent] = useState(false);
   const [displayTools, setDisplayTools] = useState(false);
@@ -118,9 +121,25 @@ export default function Edit() {
       }
     };
 
+    const renderAgents = async () => {
+      try {
+        const response = await fetch(`${url}/getAgents/${stackId}`);
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        setAgents(data)
+        console.log(data);
+      }
+      catch(err){
+        console.error("Error fetching stack data:", err);
+      }
+    }
+
     if (stackId) {
       console.log(stackId);
       fetchStack();
+      renderAgents()
     }
   }, []);
   useEffect(() => {
@@ -152,9 +171,22 @@ export default function Edit() {
     }
   }, [navigate]);
 
-  function handleAddAgent() {
+  async function handleAddAgent() {
     if (newAgentName.trim() !== "") {
       setAgents([...agents, { agentName: newAgentName }]);
+      const resp = await fetch("http://127.0.0.1:8000/createAgent/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          agentName: newAgentName,
+          stack_id: stackId,
+          output_consumer_agent: [],
+        }),
+      });
+      const data = resp.json()
+      console.log(data)
       setNewAgentName("");
     }
   }
@@ -408,12 +440,12 @@ export default function Edit() {
 
   function handleTools(name) {
     const updatedToolsAgents = [...pgAgents];
-    let x_pos = 100*pgAgents.length;
+    let x_pos = 100 * pgAgents.length;
     let newToolAgent = {
       name: `${name}`,
       kind: "tool",
 
-      id: `tool-node-${pgAgents.length-1}`,
+      id: `tool-node-${pgAgents.length - 1}`,
       data: { label: `${name}` },
       position: { x: `${x_pos}`, y: 0 },
       type: "output",
@@ -423,17 +455,17 @@ export default function Edit() {
     console.log(pgAgents);
   }
 
-  function handleModel(){
-    setSelectedModel(!selectedModel)
+  function handleModel() {
+    setSelectedModel(!selectedModel);
     const updatedArr = [...pgAgents];
     let newModelObj = {
-      id: `model-node-${pgAgents.length-1}`,
-      data: { value:123 },
+      id: `model-node-${pgAgents.length - 1}`,
+      data: { value: 123 },
       position: { x: 0, y: 0 },
       type: "modelForm",
-    }
+    };
     updatedArr.push(newModelObj);
-    setPgAgents(updatedArr)
+    setPgAgents(updatedArr);
   }
 
   return (
@@ -547,7 +579,7 @@ export default function Edit() {
                   >
                     <div
                       className={
-                        "Option" + (selectedModel ? " greenBackground" : "")
+                        "Option" 
                       }
                     >
                       <p>{llm.name}</p>

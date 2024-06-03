@@ -22,11 +22,10 @@ class Agent(Base):
     __tablename__ = 'agent'
     id = Column(Integer, primary_key=True, index=True)
     agentName = Column(String, index=True)
-    role = Column(String, index=True)
-    goal = Column(String, index=True)
-    backstory = Column(String, index=True)
-    task = Column(String, index=True)
-    capability = Column(String,index=True)
-    # Define other columns as needed
+    role = Column(String, index=True,nullable=True)
+    goal = Column(String, index=True,nullable=True)
+    backstory = Column(String, index=True,nullable=True)
+    task = Column(String, index=True,nullable=True)
+    capability = Column(String,index=True,nullable=True)
     stack_id = Column(Integer, ForeignKey('stack.id'))
     stack = relationship("Stack", back_populates="agents")
