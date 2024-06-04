@@ -26,7 +26,8 @@ export default function AgentForm(props) {
   const [localCapabilities, setLocalCapabilities] = useState(capabilities);
   const [localTask, setLocalTask] = useState(task);
   const [localToolsList, setLocalToolsList] = useState(tools_list);
-  const handleStyle = { left: 10 };
+  const handleToolStyle = { bottom: 62,left:0 };
+  const handleLlmStyle = { bottom: 25,left:299.5 };
 
   // Function to handle key down events
   const handleKeyDown = (e, field, value) => {
@@ -42,7 +43,7 @@ export default function AgentForm(props) {
 
   return (
     <>
-      <Handle type="target" position={Position.Top} />
+      <Handle type="input" position={Position.Top} className="agentConnect" />
       <div className="agent-container">
         <div className="componentHead" style={{ marginBottom: "20px" }}>
           <img src={agentsIcon} alt="" />
@@ -60,86 +61,89 @@ export default function AgentForm(props) {
             />
           </div>
           <div className="agent-form-group">
-          <label htmlFor="agentRole">Role</label>
-          <input
-            type="text"
-            id="agentRole"
-            value={localRole}
-            onChange={handleInputChange(setLocalRole)}
-            onKeyDown={(e) => handleKeyDown(e, "role", localRole)}
-          />
-        </div>
-        <div className="agent-form-group">
-          <label htmlFor="agentGoal">Goal</label>
-          <input
-            type="text"
-            id="agentGoal"
-            value={localGoal}
-            onChange={handleInputChange(setLocalGoal)}
-            onKeyDown={(e) => handleKeyDown(e, "goal", localGoal)}
-          />
-        </div>
-        <div className="agent-form-group">
-          <label htmlFor="agentBackstory">Backstory</label>
-          <input
-            type="text"
-            id="agentBackstory"
-            value={localBackstory}
-            onChange={handleInputChange(setLocalBackstory)}
-            onKeyDown={(e) => handleKeyDown(e, "backstory", localBackstory)}
-          />
-        </div>
-        <div className="agent-form-group">
-          <label htmlFor="agentCapability">Capability</label>
-          <select
-            id="agentCapability"
-            value={localCapabilities}
-            onChange={handleInputChange(setLocalCapabilities)}
-            onKeyDown={(e) => handleKeyDown(e, "capability", localCapabilities)}
+            <label htmlFor="agentRole">Role</label>
+            <input
+              type="text"
+              id="agentRole"
+              value={localRole}
+              onChange={handleInputChange(setLocalRole)}
+              onKeyDown={(e) => handleKeyDown(e, "role", localRole)}
+            />
+          </div>
+          <div className="agent-form-group">
+            <label htmlFor="agentGoal">Goal</label>
+            <input
+              type="text"
+              id="agentGoal"
+              value={localGoal}
+              onChange={handleInputChange(setLocalGoal)}
+              onKeyDown={(e) => handleKeyDown(e, "goal", localGoal)}
+            />
+          </div>
+          <div className="agent-form-group">
+            <label htmlFor="agentBackstory">Backstory</label>
+            <input
+              type="text"
+              id="agentBackstory"
+              value={localBackstory}
+              onChange={handleInputChange(setLocalBackstory)}
+              onKeyDown={(e) => handleKeyDown(e, "backstory", localBackstory)}
+            />
+          </div>
+          <div className="agent-form-group">
+            <label htmlFor="agentCapability">Capability</label>
+            <select
+              id="agentCapability"
+              value={localCapabilities}
+              onChange={handleInputChange(setLocalCapabilities)}
+              onKeyDown={(e) =>
+                handleKeyDown(e, "capability", localCapabilities)
+              }
+            >
+              <option value="search_executor">Search Executor</option>
+              <option value="llm_task_executor">LLM Task Executor</option>
+            </select>
+          </div>
+          <div className="agent-form-group">
+            <label htmlFor="agentTask">Task</label>
+            <input
+              type="text"
+              id="agentTask"
+              value={localTask}
+              onChange={handleInputChange(setLocalTask)}
+              onKeyDown={(e) => handleKeyDown(e, "task", localTask)}
+            />
+          </div>
+          <div className="agent-form-group">
+            <label htmlFor="agentTools">Tools</label>
+            {/* <input
+              type="text"
+              id="agentTools"
+              value={localToolsList}
+              onChange={handleInputChange(setLocalToolsList)}
+              onKeyDown={(e) => handleKeyDown(e, "tools_list", localToolsList)}
+            /> */}
+          </div>
+          <button
+            style={{
+              border: "1px solid grey",
+              textAlign: "center",
+              width: "50%",
+              fontSize: "12px",
+            }}
+            onClick={() => uploadAgent(localAgentName)}
           >
-            <option value="search_executor">Search Executor</option>
-            <option value="llm_task_executor">LLM Task Executor</option>
-          </select>
+            Save
+          </button>
         </div>
-        <div className="agent-form-group">
-          <label htmlFor="agentTask">Task</label>
-          <input
-            type="text"
-            id="agentTask"
-            value={localTask}
-            onChange={handleInputChange(setLocalTask)}
-            onKeyDown={(e) => handleKeyDown(e, "task", localTask)}
-          />
-        </div>
-        <div className="agent-form-group">
-          <label htmlFor="agentTools">Tools</label>
-          <input
-            type="text"
-            id="agentTools"
-            value={localToolsList}
-            onChange={handleInputChange(setLocalToolsList)}
-            onKeyDown={(e) => handleKeyDown(e, "tools_list", localToolsList)}
-          />
-        </div>
-        <button
-          style={{
-            border: "1px solid grey",
-            textAlign: "center",
-            width: "50%",
-            fontSize: "12px",
-          }}
-          onClick={() => uploadAgent(localAgentName)}
-        >
-          Save
-        </button>
-        </div>
-        <Handle type="source" position={Position.Bottom} id="a" />
-      <Handle
-        type="source"
-        position={Position.Bottom}
-        id="b"
-        style={handleStyle}
-      />
+        <Handle type="source" className="llmConnect" style={handleLlmStyle} position={Position.Bottom} id="a" />
+        <Handle
+          type="source"
+          position={Position.Bottom}
+          id="b"
+          className="toolsConnect"
+          style={handleToolStyle}
+        />
       </div>
     </>
   );

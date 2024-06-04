@@ -466,6 +466,7 @@ export default function Edit() {
     };
     updatedArr.push(newModelObj);
     setPgAgents(updatedArr);
+    console.log(nodes)
   }
 
   return (

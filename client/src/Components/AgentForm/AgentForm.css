@@ -3,7 +3,7 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     width: 19.531vw;
     min-width: 300px;
     height: fit-content;
@@ -44,4 +44,28 @@
     background-color: #f7f7f7;
     color: #333;
   }
+
+ .agentConnect{
+  /* color: red !important; */
+  border: 2px solid rgb(254, 117, 0) !important;
+  width: .75rem !important;
+  height: .75rem !important;
+  border-radius: 0%;
+ } 
+
+ .llmConnect{
+  border: 2px solid rgb(67, 103, 191) !important;
+  width: .75rem !important;
+  height: .75rem !important;
+  border-radius: 0%;
+ }
+
+ .toolsConnect{
+  border: 2px solid rgb(99, 68, 190) !important;
+  width: .75rem !important;
+  height: .75rem !important;
+  border-radius: 0%;
+ }
+
+
   
